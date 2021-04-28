@@ -32,7 +32,7 @@ class _ListViewSeparetedState extends State<ListViewSepareted> {
       appBar: AppBar(
         title: Center(
           child: Text('Estoque')),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.blue[50],
       ),
       backgroundColor: Colors.grey[100],
       body: Container(
