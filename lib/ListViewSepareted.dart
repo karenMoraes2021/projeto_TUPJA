@@ -59,12 +59,12 @@ class _ListViewSeparetedState extends State<ListViewSepareted> {
                         txtTarefa.clear();
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                           content: Text('Ítem adicionado com sucesso!'),
-                          duration: Duration(seconds: 2),
+                          duration: Duration(seconds: 3),
                         ));
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                           content: Text('Você precisa adicionar um ítem.'),
-                          duration: Duration(seconds: 2),
+                          duration: Duration(seconds: 3),
                         ));
                       }
                     });

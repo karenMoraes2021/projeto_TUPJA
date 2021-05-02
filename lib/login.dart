@@ -17,7 +17,10 @@ class _LoginState extends State<Login> {
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Container(
-            color: Colors.blue[50],
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+              colors: [Colors.blueGrey, Colors.lightBlueAccent, Colors.grey]),
+            ),
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
@@ -39,12 +42,12 @@ class _LoginState extends State<Login> {
                       children: [
                         Text('\n TUPJA ',
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 45,
+                                color: Colors.white,
+                                fontSize: 40,
                                 fontStyle: FontStyle.italic)),
                         Text('\n Terreiro Pai João de Aruanda \n',
                             style: TextStyle(
-                                color: Colors.black,
+                                color:  Colors.white,
                                 fontSize: 20,
                                 fontStyle: FontStyle.italic))
                       ],
@@ -54,15 +57,15 @@ class _LoginState extends State<Login> {
                         email = text;
                       },
                       keyboardType: TextInputType.emailAddress,
-                      style: TextStyle(color: Colors.black, fontSize: 20),
+                      style: TextStyle(color: Colors.white, fontSize: 15),
                       decoration: InputDecoration(
-                          icon: Icon(Icons.person, color: Colors.grey[900]),
-                          labelStyle: TextStyle(color: Colors.grey),
+                          icon: Icon(Icons.person, color: Colors.black),
+                          labelStyle: TextStyle(color: Colors.white),
                           labelText: 'Email',
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8))),
+                              borderRadius: BorderRadius.circular(7))),
                     ),
-                    Container(height: 10),
+                    Container(height: 5),
                     TextField(
                       onChanged: (text) {
                         senha = text;
@@ -70,16 +73,16 @@ class _LoginState extends State<Login> {
                       keyboardType: TextInputType.number,
                       obscureText: true,
                       decoration: InputDecoration(
-                          labelStyle: TextStyle(color: Colors.black),
-                          icon: Icon(Icons.vpn_key, color: Colors.grey[900]),
+                          labelStyle: TextStyle(color: Colors.white, fontSize: 15),
+                          icon: Icon(Icons.vpn_key, color: Colors.black),
                           labelText: 'Senha',
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8))),
+                              borderRadius: BorderRadius.circular(7))),
                     ),
-                    Container(height: 15),
+                    Container(height: 8),
                     Container(
                       child: ButtonTheme(
-                        buttonColor: Colors.black,
+                        buttonColor: Colors.white,
                         child: TextButton(
                           onPressed: () {
                             //  if (email == 'aluno@fatec.sp.gov.br' && senha == '1234') {
@@ -88,9 +91,12 @@ class _LoginState extends State<Login> {
                             //    print('Login Inválido');
                             //     }
                           },
-                          child: Text('Entrar ',
+                          child: 
+                           Text('Entrar ',
                               style: TextStyle(
-                                  color: Colors.indigoAccent,
+                                backgroundColor: 
+                                Colors.lightBlue[700],
+                                   color: Colors.white,
                                   fontSize: 30,
                                   fontStyle: FontStyle.italic)),
                         ),
@@ -98,7 +104,7 @@ class _LoginState extends State<Login> {
                     ),
                     Container(
                       child: ButtonTheme(
-                        buttonColor: Colors.indigoAccent,
+                        buttonColor: Colors.white,
                         child: TextButton(
                           onPressed: () {
                             if (esqueceSenha) {
@@ -110,8 +116,8 @@ class _LoginState extends State<Login> {
                           },
                           child: Text('\n Recuperar Senha',
                               style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
+                                  color: Colors.white,
+                                  fontSize: 18,
                                   fontStyle: FontStyle.italic)),
                         ),
                       ),
