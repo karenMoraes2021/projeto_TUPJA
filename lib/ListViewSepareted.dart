@@ -10,160 +10,295 @@ class ListViewSepareted extends StatefulWidget {
 
 class _ListViewSeparetedState extends State<ListViewSepareted> {
   //lista dinâmica simplesmente encadeada
-  var lista = [];
-
-  var txtTarefa = TextEditingController();
-  var txtDialogo = TextEditingController();
-
-  @override
-  void initState() {
-    lista.add('Vela Vermelha');
-    lista.add('Cigarro Palha');
-    lista.add('Cigarro Vermelho');
-    lista.add('Charuto');
-    lista.add('Vela Azul');
-    lista.add('Vela Amarela');
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text('Estoque')),
-        backgroundColor: Colors.lightBlue[600],
-      ),
-      backgroundColor: Colors.grey[100],
+      appBar: AppBar(title: Text('Estoque')),
       body: Container(
-        decoration: BoxDecoration(
-              gradient: LinearGradient(
-              colors: [Colors.blueGrey, Colors.lightBlueAccent, Colors.grey]),
-            ),
-        padding: EdgeInsets.all(40),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    controller: txtTarefa,
-                    style: TextStyle(fontSize: 18),
-                    decoration: InputDecoration(
-                      labelText: 'Adicionar Ítem',
-                    ),
-                  ),
-                ),
-                IconButton(
-                  icon: Icon(Icons.add, color: Colors.grey[600]),
-                  onPressed: () {
-                    setState(() {
-                      if (txtTarefa.text.isNotEmpty) {
-                        lista.add(txtTarefa.text);
-                        txtTarefa.clear();
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: Text('Ítem adicionado com sucesso!'),
-                          duration: Duration(seconds: 3),
-                        ));
-                      } else {
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: Text('Você precisa adicionar um ítem.'),
-                          duration: Duration(seconds: 3),
-                        ));
-                      }
-                    });
-                  },
-                )
-              ],
-            ),
-            SizedBox(height: 20),
-            Expanded(
-              child: ListView.separated(
-                //Aparência do item da lista
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(
-                      lista[index],
-                      style: TextStyle(fontSize: 18),
-                    ),
-                    trailing: IconButton(
-                      icon: Icon(Icons.delete),
-                      onPressed: () {
-                        setState(() {
-                          lista.removeAt(index);
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text('Ítem removido com sucesso.'),
-                            duration: Duration(seconds: 2),
-                          ));
-                        });
-                      },
-                    ),
-                  );
-                },
-
-                //Aparência do divisor
-                separatorBuilder: (context, index) {
-                  return Divider(
-                    color: Colors.blue[100],
-                    thickness: 1,
-                  );
-                },
-
-                //total de itens da lista
-                itemCount: lista.length,
-              ),
-            ),
-          ],
-        ),
+        height: 500,
+        child: carrousel(context),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        backgroundColor: Colors.red,
-        onPressed: () async {
-          await showDialog(
-              context: context,
-              builder: (context) {
-                return AlertDialog(
-                  title: Text('Adicionar ítem'),
-                  content: TextField(
-                    controller: txtDialogo,
-                    style: TextStyle(fontSize: 18),
-                    decoration: InputDecoration(),
-                  ),
-                  actions: [
-                    TextButton(
-                        onPressed: () {
-                          setState(() {
-                            if (txtDialogo.text.isNotEmpty) {
-                              lista.add(txtDialogo.text);
-                              txtDialogo.clear();
+    );
+  }
+}
 
-                              ScaffoldMessenger.of(context)
-                                  .showSnackBar(SnackBar(
-                                content: Text('Ítem adicionado com sucesso!'),
-                                duration: Duration(seconds: 2),
-                              ));
-                            } else {
-                              ScaffoldMessenger.of(context)
-                                  .showSnackBar(SnackBar(
-                                content:
-                                    Text('Você precisa adicionar um ítem.'),
-                                duration: Duration(seconds: 2),
-                              ));
-                            }
-                          });
-                          Navigator.pop(context);
-                        },
-                        child: Text('ok')),
-                    TextButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        child: Text('cancelar'))
-                  ],
-                );
-              });
-        },
+Widget carrousel(context) {
+  return ListView(
+    padding: EdgeInsets.all(10),
+    scrollDirection: Axis.horizontal,
+    children: [
+      Container(
+        padding: EdgeInsets.all(5),
+        width: 330,
+        color: Colors.red[50],
+        child: Produto1(),
+      ),
+      Container(
+        padding: EdgeInsets.all(5),
+        width: 330,
+        color: Colors.green[50],
+        child: Produto2(),
+      ),
+      Container(
+        padding: EdgeInsets.all(5),
+        width: 330,
+        color: Colors.yellow[50],
+        child: Produto3(),
+      ),
+      Container(
+        padding: EdgeInsets.all(5),
+        width: 330,
+        color: Colors.orange[50],
+        child: Produto4(),
+      )
+    ],
+  );
+}
+
+// PRODUTO 1
+
+class Produto1 extends StatefulWidget {
+  @override
+  _State2 createState() => _State2();
+}
+
+class _State2 extends State<Produto1> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+              SizedBox(
+                width: 20,
+              ),
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
+}
+
+// PRODUTO 2
+
+class Produto2 extends StatefulWidget {
+  @override
+  _State3 createState() => _State3();
+}
+
+class _State3 extends State<Produto2> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+              SizedBox(
+                width: 20,
+              ),
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
+}
+
+// PRODUTO 3
+
+class Produto3 extends StatefulWidget {
+  @override
+  _State4 createState() => _State4();
+}
+
+class _State4 extends State<Produto3> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+              SizedBox(
+                width: 20,
+              ),
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
+}
+
+// PRODUTO 4
+
+class Produto4 extends StatefulWidget {
+  @override
+  _State5 createState() => _State5();
+}
+
+class _State5 extends State<Produto4> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+              SizedBox(
+                width: 20,
+              ),
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
       ),
     );
   }

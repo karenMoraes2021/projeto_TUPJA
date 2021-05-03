@@ -11,16 +11,22 @@ class _TelaSobreDesenvState extends State<TelaSobreDesenv> {
     return Scaffold(
         appBar: AppBar(
             backgroundColor: Colors.lightBlue[600],
-            title: Center(child: Text('Sobre APP',
-            style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontStyle: FontStyle.italic),))),
+            title: Center(
+                child: Text(
+              'Sobre',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                  fontStyle: FontStyle.italic),
+            ))),
         backgroundColor: Colors.white,
-         body: Container(
-          decoration: BoxDecoration(
-              gradient: LinearGradient(
-              colors: [Colors.blueGrey, Colors.lightBlueAccent, Colors.grey]),
+        body: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+                Colors.blueGrey,
+                Colors.lightBlueAccent,
+                Colors.grey
+              ]),
             ),
             padding: EdgeInsets.all(20),
             child: ListView(children: [
@@ -55,12 +61,8 @@ class _TelaSobreDesenvState extends State<TelaSobreDesenv> {
                           height: 200,
                           child: Image.asset('lib/imagem/Karen.jpg')),
                       Container(width: 150, child: Center()),
-                  ]
-                ),
+                    ]),
               )
-         ]
-       )
-     )
-    );
+            ])));
   }
 }
