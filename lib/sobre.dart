@@ -17,7 +17,11 @@ class _TelaSobreDesenvState extends State<TelaSobreDesenv> {
                     fontSize: 15,
                     fontStyle: FontStyle.italic),))),
         backgroundColor: Colors.white,
-        body: Container(
+         body: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+              colors: [Colors.blueGrey, Colors.lightBlueAccent, Colors.grey]),
+            ),
             padding: EdgeInsets.all(20),
             child: ListView(children: [
               Container(
