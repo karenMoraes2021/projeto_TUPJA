@@ -1,659 +1,3235 @@
-define(['dart_sdk', 'packages/flutter/src/foundation/object.dart'], (function load__packages__flutter__src__painting__alignment_dart(dart_sdk, packages__flutter__src__foundation__object$46dart) {
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/material/chip.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/painting/basic_types.dart', 'packages/flutter/src/material/colors.dart'], (function load__packages__tupja__t_estoquePage_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__material__chip$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__painting__basic_types$46dart, packages__flutter__src__material__colors$46dart) {
   'use strict';
   const core = dart_sdk.core;
-  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
-  const object = packages__flutter__src__foundation__object$46dart.src__foundation__object;
-  var alignment = Object.create(dart.library);
-  var $truncate = dartx.truncate;
-  var $toDouble = dartx.toDouble;
-  var $modulo = dartx['%'];
-  var $toStringAsFixed = dartx.toStringAsFixed;
-  var $runtimeType = dartx.runtimeType;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const text_button = packages__flutter__src__material__icon_button$46dart.src__material__text_button;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const chip = packages__flutter__src__material__chip$46dart.src__material__chip;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const basic_types = packages__flutter__src__painting__basic_types$46dart.src__painting__basic_types;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  var t_estoquePage = Object.create(dart.library);
   dart._checkModuleNullSafetyMode(true);
+  var T = {
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))()
+  };
   const CT = Object.create({
     _: () => (C, CT)
   });
   dart.defineLazy(CT, {
-    get C0() {
-      return C[0] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: -1,
-        [x$]: -1
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 34,
+        [_Location_line]: 15,
+        [_Location_file]: null
       });
     },
     get C1() {
-      return C[1] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: -1,
-        [x$]: 0
-      });
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
     },
-    get C2() {
-      return C[2] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: -1,
-        [x$]: 1
-      });
-    },
-    get C3() {
-      return C[3] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: 0,
-        [x$]: -1
-      });
-    },
-    get C4() {
-      return C[4] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: 0,
-        [x$]: 0
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
       });
     },
     get C5() {
       return C[5] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: 0,
-        [x$]: 1
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 22,
+        [_Location_line]: 15,
+        [_Location_file]: null
       });
     },
-    get C6() {
-      return C[6] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: 1,
-        [x$]: -1
-      });
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
     },
-    get C7() {
-      return C[7] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: 1,
-        [x$]: 0
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
       });
     },
     get C8() {
       return C[8] = dart.const({
-        __proto__: alignment.Alignment.prototype,
-        [y$]: 1,
-        [x$]: 1
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 9,
+        [_Location_line]: 17,
+        [_Location_file]: null
       });
     },
     get C9() {
       return C[9] = dart.const({
-        __proto__: ui.TextDirection.prototype,
-        [_name]: "TextDirection.rtl",
-        index: 0
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 18,
+        [_Location_file]: null
       });
     },
-    get C10() {
-      return C[10] = dart.const({
-        __proto__: ui.TextDirection.prototype,
-        [_name]: "TextDirection.ltr",
-        index: 1
-      });
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9], widget_inspector._Location);
     },
-    get C11() {
-      return C[11] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: -1,
-        [start$]: -1
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
       });
     },
     get C12() {
       return C[12] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: -1,
-        [start$]: 0
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
       });
     },
     get C13() {
       return C[13] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: -1,
-        [start$]: 1
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
       });
     },
-    get C14() {
-      return C[14] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: 0,
-        [start$]: -1
-      });
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
     },
-    get C15() {
-      return C[15] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: 0,
-        [start$]: 0
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
       });
     },
     get C16() {
       return C[16] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: 0,
-        [start$]: 1
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 74,
+        [_Location_file]: null
       });
     },
     get C17() {
       return C[17] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: 1,
-        [start$]: -1
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 38,
+        [_Location_line]: 74,
+        [_Location_file]: null
       });
     },
-    get C18() {
-      return C[18] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: 1,
-        [start$]: 0
-      });
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17], widget_inspector._Location);
     },
-    get C19() {
-      return C[19] = dart.const({
-        __proto__: alignment.AlignmentDirectional.prototype,
-        [y$0]: 1,
-        [start$]: 1
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
       });
     },
     get C20() {
       return C[20] = dart.const({
-        __proto__: alignment.TextAlignVertical.prototype,
-        [y$1]: -1
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 73,
+        [_Location_file]: null
       });
     },
-    get C21() {
-      return C[21] = dart.const({
-        __proto__: alignment.TextAlignVertical.prototype,
-        [y$1]: 0
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20], widget_inspector._Location);
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 73,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "src",
+        [_Location_column]: 34,
+        [_Location_line]: 80,
+        [_Location_file]: null
       });
     },
     get C22() {
-      return C[22] = dart.const({
-        __proto__: alignment.TextAlignVertical.prototype,
-        [y$1]: 1
+      return C[22] = dart.constList([C[23] || CT.C23], widget_inspector._Location);
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 80,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 13,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26, C[27] || CT.C27, C[28] || CT.C28], widget_inspector._Location);
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31], widget_inspector._Location);
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 83,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34], widget_inspector._Location);
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 82,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37], widget_inspector._Location);
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 88,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 87,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46], widget_inspector._Location);
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.constList([C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[48] || CT.C48,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52], widget_inspector._Location);
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 91,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 96,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.constList([C[55] || CT.C55], widget_inspector._Location);
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[54] || CT.C54,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 96,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 96,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58], widget_inspector._Location);
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 95,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61], widget_inspector._Location);
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 94,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 100,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.constList([C[64] || CT.C64], widget_inspector._Location);
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[63] || CT.C63,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 100,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 99,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67], widget_inspector._Location);
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 99,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 107,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70], widget_inspector._Location);
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 107,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 107,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.constList([C[73] || CT.C73, C[74] || CT.C74], widget_inspector._Location);
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[72] || CT.C72,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 104,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 109,
+        [_Location_file]: null
+      });
+    },
+    get C76() {
+      return C[76] = dart.constList([C[77] || CT.C77], widget_inspector._Location);
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[76] || CT.C76,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 108,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C79() {
+      return C[79] = dart.constList([C[80] || CT.C80], widget_inspector._Location);
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[79] || CT.C79,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 114,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 112,
+        [_Location_file]: null
+      });
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.constList([C[83] || CT.C83, C[84] || CT.C84], widget_inspector._Location);
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[82] || CT.C82,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 111,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C86() {
+      return C[86] = dart.constList([C[87] || CT.C87], widget_inspector._Location);
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[86] || CT.C86,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 102,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C89() {
+      return C[89] = dart.constList([C[90] || CT.C90], widget_inspector._Location);
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[89] || CT.C89,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C92() {
+      return C[92] = dart.constList([C[93] || CT.C93, C[94] || CT.C94], widget_inspector._Location);
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[92] || CT.C92,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 37,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C96() {
+      return C[96] = dart.constList([C[97] || CT.C97, C[98] || CT.C98], widget_inspector._Location);
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[96] || CT.C96,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 140,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 139,
+        [_Location_file]: null
+      });
+    },
+    get C100() {
+      return C[100] = dart.constList([C[101] || CT.C101], widget_inspector._Location);
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[100] || CT.C100,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 139,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "src",
+        [_Location_column]: 34,
+        [_Location_line]: 146,
+        [_Location_file]: null
+      });
+    },
+    get C103() {
+      return C[103] = dart.constList([C[104] || CT.C104], widget_inspector._Location);
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[103] || CT.C103,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 146,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 13,
+        [_Location_line]: 144,
+        [_Location_file]: null
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 145,
+        [_Location_file]: null
+      });
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 146,
+        [_Location_file]: null
+      });
+    },
+    get C106() {
+      return C[106] = dart.constList([C[107] || CT.C107, C[108] || CT.C108, C[109] || CT.C109], widget_inspector._Location);
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[106] || CT.C106,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 143,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C111() {
+      return C[111] = dart.constList([C[112] || CT.C112], widget_inspector._Location);
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[111] || CT.C111,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 149,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 149,
+        [_Location_file]: null
+      });
+    },
+    get C114() {
+      return C[114] = dart.constList([C[115] || CT.C115], widget_inspector._Location);
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[114] || CT.C114,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 148,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 142,
+        [_Location_file]: null
+      });
+    },
+    get C117() {
+      return C[117] = dart.constList([C[118] || CT.C118], widget_inspector._Location);
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[117] || CT.C117,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 142,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 154,
+        [_Location_file]: null
+      });
+    },
+    get C120() {
+      return C[120] = dart.constList([C[121] || CT.C121], widget_inspector._Location);
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[120] || CT.C120,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 154,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 154,
+        [_Location_file]: null
+      });
+    },
+    get C123() {
+      return C[123] = dart.constList([C[124] || CT.C124], widget_inspector._Location);
+    },
+    get C122() {
+      return C[122] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[123] || CT.C123,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 153,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 152,
+        [_Location_file]: null
+      });
+    },
+    get C126() {
+      return C[126] = dart.constList([C[127] || CT.C127], widget_inspector._Location);
+    },
+    get C125() {
+      return C[125] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[126] || CT.C126,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 152,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 158,
+        [_Location_file]: null
+      });
+    },
+    get C129() {
+      return C[129] = dart.constList([C[130] || CT.C130], widget_inspector._Location);
+    },
+    get C128() {
+      return C[128] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[129] || CT.C129,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 158,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 157,
+        [_Location_file]: null
+      });
+    },
+    get C132() {
+      return C[132] = dart.constList([C[133] || CT.C133], widget_inspector._Location);
+    },
+    get C131() {
+      return C[131] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[132] || CT.C132,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 157,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C136() {
+      return C[136] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C135() {
+      return C[135] = dart.constList([C[136] || CT.C136], widget_inspector._Location);
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[135] || CT.C135,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 162,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C139() {
+      return C[139] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C138() {
+      return C[138] = dart.constList([C[139] || CT.C139], widget_inspector._Location);
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[138] || CT.C138,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 161,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C142() {
+      return C[142] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 160,
+        [_Location_file]: null
+      });
+    },
+    get C141() {
+      return C[141] = dart.constList([C[142] || CT.C142], widget_inspector._Location);
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[141] || CT.C141,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 160,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C145() {
+      return C[145] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 166,
+        [_Location_file]: null
+      });
+    },
+    get C144() {
+      return C[144] = dart.constList([C[145] || CT.C145], widget_inspector._Location);
+    },
+    get C143() {
+      return C[143] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[144] || CT.C144,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 166,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C148() {
+      return C[148] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C147() {
+      return C[147] = dart.constList([C[148] || CT.C148], widget_inspector._Location);
+    },
+    get C146() {
+      return C[146] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[147] || CT.C147,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 165,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C151() {
+      return C[151] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 173,
+        [_Location_file]: null
+      });
+    },
+    get C150() {
+      return C[150] = dart.constList([C[151] || CT.C151], widget_inspector._Location);
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[150] || CT.C150,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 173,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C154() {
+      return C[154] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 171,
+        [_Location_file]: null
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 173,
+        [_Location_file]: null
+      });
+    },
+    get C153() {
+      return C[153] = dart.constList([C[154] || CT.C154, C[155] || CT.C155], widget_inspector._Location);
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[153] || CT.C153,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 170,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C158() {
+      return C[158] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 175,
+        [_Location_file]: null
+      });
+    },
+    get C157() {
+      return C[157] = dart.constList([C[158] || CT.C158], widget_inspector._Location);
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[157] || CT.C157,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 174,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C161() {
+      return C[161] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 180,
+        [_Location_file]: null
+      });
+    },
+    get C160() {
+      return C[160] = dart.constList([C[161] || CT.C161], widget_inspector._Location);
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[160] || CT.C160,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 180,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 178,
+        [_Location_file]: null
+      });
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 180,
+        [_Location_file]: null
+      });
+    },
+    get C163() {
+      return C[163] = dart.constList([C[164] || CT.C164, C[165] || CT.C165], widget_inspector._Location);
+    },
+    get C162() {
+      return C[162] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[163] || CT.C163,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 177,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C168() {
+      return C[168] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 169,
+        [_Location_file]: null
+      });
+    },
+    get C167() {
+      return C[167] = dart.constList([C[168] || CT.C168], widget_inspector._Location);
+    },
+    get C166() {
+      return C[166] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[167] || CT.C167,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 168,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C171() {
+      return C[171] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C170() {
+      return C[170] = dart.constList([C[171] || CT.C171], widget_inspector._Location);
+    },
+    get C169() {
+      return C[169] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[170] || CT.C170,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 137,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C174() {
+      return C[174] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 136,
+        [_Location_file]: null
+      });
+    },
+    get C175() {
+      return C[175] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 137,
+        [_Location_file]: null
+      });
+    },
+    get C173() {
+      return C[173] = dart.constList([C[174] || CT.C174, C[175] || CT.C175], widget_inspector._Location);
+    },
+    get C172() {
+      return C[172] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[173] || CT.C173,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 135,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C178() {
+      return C[178] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 207,
+        [_Location_file]: null
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 34,
+        [_Location_line]: 207,
+        [_Location_file]: null
+      });
+    },
+    get C177() {
+      return C[177] = dart.constList([C[178] || CT.C178, C[179] || CT.C179], widget_inspector._Location);
+    },
+    get C176() {
+      return C[176] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[177] || CT.C177,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 207,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C182() {
+      return C[182] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 206,
+        [_Location_file]: null
+      });
+    },
+    get C181() {
+      return C[181] = dart.constList([C[182] || CT.C182], widget_inspector._Location);
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[181] || CT.C181,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 206,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C185() {
+      return C[185] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "src",
+        [_Location_column]: 34,
+        [_Location_line]: 213,
+        [_Location_file]: null
+      });
+    },
+    get C184() {
+      return C[184] = dart.constList([C[185] || CT.C185], widget_inspector._Location);
+    },
+    get C183() {
+      return C[183] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[184] || CT.C184,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 213,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C188() {
+      return C[188] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 13,
+        [_Location_line]: 211,
+        [_Location_file]: null
+      });
+    },
+    get C189() {
+      return C[189] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 212,
+        [_Location_file]: null
+      });
+    },
+    get C190() {
+      return C[190] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 213,
+        [_Location_file]: null
+      });
+    },
+    get C187() {
+      return C[187] = dart.constList([C[188] || CT.C188, C[189] || CT.C189, C[190] || CT.C190], widget_inspector._Location);
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[187] || CT.C187,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 210,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 217,
+        [_Location_file]: null
+      });
+    },
+    get C192() {
+      return C[192] = dart.constList([C[193] || CT.C193], widget_inspector._Location);
+    },
+    get C191() {
+      return C[191] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[192] || CT.C192,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 216,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C196() {
+      return C[196] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 216,
+        [_Location_file]: null
+      });
+    },
+    get C195() {
+      return C[195] = dart.constList([C[196] || CT.C196], widget_inspector._Location);
+    },
+    get C194() {
+      return C[194] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[195] || CT.C195,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 215,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C199() {
+      return C[199] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 209,
+        [_Location_file]: null
+      });
+    },
+    get C198() {
+      return C[198] = dart.constList([C[199] || CT.C199], widget_inspector._Location);
+    },
+    get C197() {
+      return C[197] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[198] || CT.C198,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 209,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C202() {
+      return C[202] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 221,
+        [_Location_file]: null
+      });
+    },
+    get C201() {
+      return C[201] = dart.constList([C[202] || CT.C202], widget_inspector._Location);
+    },
+    get C200() {
+      return C[200] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[201] || CT.C201,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 221,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 221,
+        [_Location_file]: null
+      });
+    },
+    get C204() {
+      return C[204] = dart.constList([C[205] || CT.C205], widget_inspector._Location);
+    },
+    get C203() {
+      return C[203] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[204] || CT.C204,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 220,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C208() {
+      return C[208] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 219,
+        [_Location_file]: null
+      });
+    },
+    get C207() {
+      return C[207] = dart.constList([C[208] || CT.C208], widget_inspector._Location);
+    },
+    get C206() {
+      return C[206] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[207] || CT.C207,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 219,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 225,
+        [_Location_file]: null
+      });
+    },
+    get C210() {
+      return C[210] = dart.constList([C[211] || CT.C211], widget_inspector._Location);
+    },
+    get C209() {
+      return C[209] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[210] || CT.C210,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 225,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 224,
+        [_Location_file]: null
+      });
+    },
+    get C213() {
+      return C[213] = dart.constList([C[214] || CT.C214], widget_inspector._Location);
+    },
+    get C212() {
+      return C[212] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[213] || CT.C213,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 224,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C217() {
+      return C[217] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 229,
+        [_Location_file]: null
+      });
+    },
+    get C216() {
+      return C[216] = dart.constList([C[217] || CT.C217], widget_inspector._Location);
+    },
+    get C215() {
+      return C[215] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[216] || CT.C216,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 229,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C220() {
+      return C[220] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 229,
+        [_Location_file]: null
+      });
+    },
+    get C219() {
+      return C[219] = dart.constList([C[220] || CT.C220], widget_inspector._Location);
+    },
+    get C218() {
+      return C[218] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[219] || CT.C219,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 228,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C223() {
+      return C[223] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 227,
+        [_Location_file]: null
+      });
+    },
+    get C222() {
+      return C[222] = dart.constList([C[223] || CT.C223], widget_inspector._Location);
+    },
+    get C221() {
+      return C[221] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[222] || CT.C222,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 227,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C226() {
+      return C[226] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 233,
+        [_Location_file]: null
+      });
+    },
+    get C225() {
+      return C[225] = dart.constList([C[226] || CT.C226], widget_inspector._Location);
+    },
+    get C224() {
+      return C[224] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[225] || CT.C225,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 233,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C229() {
+      return C[229] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 232,
+        [_Location_file]: null
+      });
+    },
+    get C228() {
+      return C[228] = dart.constList([C[229] || CT.C229], widget_inspector._Location);
+    },
+    get C227() {
+      return C[227] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[228] || CT.C228,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 232,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C232() {
+      return C[232] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 240,
+        [_Location_file]: null
+      });
+    },
+    get C231() {
+      return C[231] = dart.constList([C[232] || CT.C232], widget_inspector._Location);
+    },
+    get C230() {
+      return C[230] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[231] || CT.C231,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 240,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C235() {
+      return C[235] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 238,
+        [_Location_file]: null
+      });
+    },
+    get C236() {
+      return C[236] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 240,
+        [_Location_file]: null
+      });
+    },
+    get C234() {
+      return C[234] = dart.constList([C[235] || CT.C235, C[236] || CT.C236], widget_inspector._Location);
+    },
+    get C233() {
+      return C[233] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[234] || CT.C234,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 237,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C239() {
+      return C[239] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 242,
+        [_Location_file]: null
+      });
+    },
+    get C238() {
+      return C[238] = dart.constList([C[239] || CT.C239], widget_inspector._Location);
+    },
+    get C237() {
+      return C[237] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[238] || CT.C238,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 241,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C242() {
+      return C[242] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 247,
+        [_Location_file]: null
+      });
+    },
+    get C241() {
+      return C[241] = dart.constList([C[242] || CT.C242], widget_inspector._Location);
+    },
+    get C240() {
+      return C[240] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[241] || CT.C241,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 247,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C245() {
+      return C[245] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 245,
+        [_Location_file]: null
+      });
+    },
+    get C246() {
+      return C[246] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 247,
+        [_Location_file]: null
+      });
+    },
+    get C244() {
+      return C[244] = dart.constList([C[245] || CT.C245, C[246] || CT.C246], widget_inspector._Location);
+    },
+    get C243() {
+      return C[243] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[244] || CT.C244,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 244,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C249() {
+      return C[249] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 236,
+        [_Location_file]: null
+      });
+    },
+    get C248() {
+      return C[248] = dart.constList([C[249] || CT.C249], widget_inspector._Location);
+    },
+    get C247() {
+      return C[247] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[248] || CT.C248,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 235,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C252() {
+      return C[252] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 204,
+        [_Location_file]: null
+      });
+    },
+    get C251() {
+      return C[251] = dart.constList([C[252] || CT.C252], widget_inspector._Location);
+    },
+    get C250() {
+      return C[250] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[251] || CT.C251,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 203,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C255() {
+      return C[255] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 202,
+        [_Location_file]: null
+      });
+    },
+    get C256() {
+      return C[256] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 203,
+        [_Location_file]: null
+      });
+    },
+    get C254() {
+      return C[254] = dart.constList([C[255] || CT.C255, C[256] || CT.C256], widget_inspector._Location);
+    },
+    get C253() {
+      return C[253] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[254] || CT.C254,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 201,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C259() {
+      return C[259] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 274,
+        [_Location_file]: null
+      });
+    },
+    get C260() {
+      return C[260] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 41,
+        [_Location_line]: 274,
+        [_Location_file]: null
+      });
+    },
+    get C258() {
+      return C[258] = dart.constList([C[259] || CT.C259, C[260] || CT.C260], widget_inspector._Location);
+    },
+    get C257() {
+      return C[257] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[258] || CT.C258,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 274,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C263() {
+      return C[263] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 273,
+        [_Location_file]: null
+      });
+    },
+    get C262() {
+      return C[262] = dart.constList([C[263] || CT.C263], widget_inspector._Location);
+    },
+    get C261() {
+      return C[261] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[262] || CT.C262,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 273,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C266() {
+      return C[266] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "src",
+        [_Location_column]: 34,
+        [_Location_line]: 280,
+        [_Location_file]: null
+      });
+    },
+    get C265() {
+      return C[265] = dart.constList([C[266] || CT.C266], widget_inspector._Location);
+    },
+    get C264() {
+      return C[264] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[265] || CT.C265,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 280,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C269() {
+      return C[269] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 13,
+        [_Location_line]: 278,
+        [_Location_file]: null
+      });
+    },
+    get C270() {
+      return C[270] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 279,
+        [_Location_file]: null
+      });
+    },
+    get C271() {
+      return C[271] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 280,
+        [_Location_file]: null
+      });
+    },
+    get C268() {
+      return C[268] = dart.constList([C[269] || CT.C269, C[270] || CT.C270, C[271] || CT.C271], widget_inspector._Location);
+    },
+    get C267() {
+      return C[267] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[268] || CT.C268,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 277,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C274() {
+      return C[274] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 284,
+        [_Location_file]: null
+      });
+    },
+    get C273() {
+      return C[273] = dart.constList([C[274] || CT.C274], widget_inspector._Location);
+    },
+    get C272() {
+      return C[272] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[273] || CT.C273,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 283,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C277() {
+      return C[277] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 283,
+        [_Location_file]: null
+      });
+    },
+    get C276() {
+      return C[276] = dart.constList([C[277] || CT.C277], widget_inspector._Location);
+    },
+    get C275() {
+      return C[275] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[276] || CT.C276,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 282,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C280() {
+      return C[280] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 276,
+        [_Location_file]: null
+      });
+    },
+    get C279() {
+      return C[279] = dart.constList([C[280] || CT.C280], widget_inspector._Location);
+    },
+    get C278() {
+      return C[278] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[279] || CT.C279,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 276,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C283() {
+      return C[283] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 288,
+        [_Location_file]: null
+      });
+    },
+    get C282() {
+      return C[282] = dart.constList([C[283] || CT.C283], widget_inspector._Location);
+    },
+    get C281() {
+      return C[281] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[282] || CT.C282,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 288,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C286() {
+      return C[286] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 288,
+        [_Location_file]: null
+      });
+    },
+    get C285() {
+      return C[285] = dart.constList([C[286] || CT.C286], widget_inspector._Location);
+    },
+    get C284() {
+      return C[284] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[285] || CT.C285,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 287,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C289() {
+      return C[289] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 286,
+        [_Location_file]: null
+      });
+    },
+    get C288() {
+      return C[288] = dart.constList([C[289] || CT.C289], widget_inspector._Location);
+    },
+    get C287() {
+      return C[287] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[288] || CT.C288,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 286,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C292() {
+      return C[292] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 292,
+        [_Location_file]: null
+      });
+    },
+    get C291() {
+      return C[291] = dart.constList([C[292] || CT.C292], widget_inspector._Location);
+    },
+    get C290() {
+      return C[290] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[291] || CT.C291,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 292,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C295() {
+      return C[295] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 291,
+        [_Location_file]: null
+      });
+    },
+    get C294() {
+      return C[294] = dart.constList([C[295] || CT.C295], widget_inspector._Location);
+    },
+    get C293() {
+      return C[293] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[294] || CT.C294,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 291,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C298() {
+      return C[298] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 296,
+        [_Location_file]: null
+      });
+    },
+    get C297() {
+      return C[297] = dart.constList([C[298] || CT.C298], widget_inspector._Location);
+    },
+    get C296() {
+      return C[296] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[297] || CT.C297,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 296,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C301() {
+      return C[301] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 296,
+        [_Location_file]: null
+      });
+    },
+    get C300() {
+      return C[300] = dart.constList([C[301] || CT.C301], widget_inspector._Location);
+    },
+    get C299() {
+      return C[299] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[300] || CT.C300,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 295,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C304() {
+      return C[304] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 294,
+        [_Location_file]: null
+      });
+    },
+    get C303() {
+      return C[303] = dart.constList([C[304] || CT.C304], widget_inspector._Location);
+    },
+    get C302() {
+      return C[302] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[303] || CT.C303,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 294,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C307() {
+      return C[307] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 300,
+        [_Location_file]: null
+      });
+    },
+    get C306() {
+      return C[306] = dart.constList([C[307] || CT.C307], widget_inspector._Location);
+    },
+    get C305() {
+      return C[305] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[306] || CT.C306,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 300,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C310() {
+      return C[310] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 299,
+        [_Location_file]: null
+      });
+    },
+    get C309() {
+      return C[309] = dart.constList([C[310] || CT.C310], widget_inspector._Location);
+    },
+    get C308() {
+      return C[308] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[309] || CT.C309,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 299,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C313() {
+      return C[313] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 307,
+        [_Location_file]: null
+      });
+    },
+    get C312() {
+      return C[312] = dart.constList([C[313] || CT.C313], widget_inspector._Location);
+    },
+    get C311() {
+      return C[311] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[312] || CT.C312,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 307,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C316() {
+      return C[316] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 305,
+        [_Location_file]: null
+      });
+    },
+    get C317() {
+      return C[317] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 307,
+        [_Location_file]: null
+      });
+    },
+    get C315() {
+      return C[315] = dart.constList([C[316] || CT.C316, C[317] || CT.C317], widget_inspector._Location);
+    },
+    get C314() {
+      return C[314] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[315] || CT.C315,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 304,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C320() {
+      return C[320] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 309,
+        [_Location_file]: null
+      });
+    },
+    get C319() {
+      return C[319] = dart.constList([C[320] || CT.C320], widget_inspector._Location);
+    },
+    get C318() {
+      return C[318] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[319] || CT.C319,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 308,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C323() {
+      return C[323] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 314,
+        [_Location_file]: null
+      });
+    },
+    get C322() {
+      return C[322] = dart.constList([C[323] || CT.C323], widget_inspector._Location);
+    },
+    get C321() {
+      return C[321] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[322] || CT.C322,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 314,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C326() {
+      return C[326] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 312,
+        [_Location_file]: null
+      });
+    },
+    get C327() {
+      return C[327] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 314,
+        [_Location_file]: null
+      });
+    },
+    get C325() {
+      return C[325] = dart.constList([C[326] || CT.C326, C[327] || CT.C327], widget_inspector._Location);
+    },
+    get C324() {
+      return C[324] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[325] || CT.C325,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 311,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C330() {
+      return C[330] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 303,
+        [_Location_file]: null
+      });
+    },
+    get C329() {
+      return C[329] = dart.constList([C[330] || CT.C330], widget_inspector._Location);
+    },
+    get C328() {
+      return C[328] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[329] || CT.C329,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 302,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C333() {
+      return C[333] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 271,
+        [_Location_file]: null
+      });
+    },
+    get C332() {
+      return C[332] = dart.constList([C[333] || CT.C333], widget_inspector._Location);
+    },
+    get C331() {
+      return C[331] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[332] || CT.C332,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 270,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C336() {
+      return C[336] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 269,
+        [_Location_file]: null
+      });
+    },
+    get C337() {
+      return C[337] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 270,
+        [_Location_file]: null
+      });
+    },
+    get C335() {
+      return C[335] = dart.constList([C[336] || CT.C336, C[337] || CT.C337], widget_inspector._Location);
+    },
+    get C334() {
+      return C[334] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[335] || CT.C335,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 268,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C339() {
+      return C[339] = dart.constList([], widget_inspector._Location);
+    },
+    get C338() {
+      return C[338] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[339] || CT.C339,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C342() {
+      return C[342] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C343() {
+      return C[343] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C344() {
+      return C[344] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C345() {
+      return C[345] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C341() {
+      return C[341] = dart.constList([C[342] || CT.C342, C[343] || CT.C343, C[344] || CT.C344, C[345] || CT.C345], widget_inspector._Location);
+    },
+    get C340() {
+      return C[340] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[341] || CT.C341,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C346() {
+      return C[346] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[339] || CT.C339,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C349() {
+      return C[349] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C350() {
+      return C[350] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C351() {
+      return C[351] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C352() {
+      return C[352] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C348() {
+      return C[348] = dart.constList([C[349] || CT.C349, C[350] || CT.C350, C[351] || CT.C351, C[352] || CT.C352], widget_inspector._Location);
+    },
+    get C347() {
+      return C[347] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[348] || CT.C348,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C353() {
+      return C[353] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[339] || CT.C339,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C356() {
+      return C[356] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C357() {
+      return C[357] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C358() {
+      return C[358] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C359() {
+      return C[359] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C355() {
+      return C[355] = dart.constList([C[356] || CT.C356, C[357] || CT.C357, C[358] || CT.C358, C[359] || CT.C359], widget_inspector._Location);
+    },
+    get C354() {
+      return C[354] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[355] || CT.C355,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C360() {
+      return C[360] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[339] || CT.C339,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C363() {
+      return C[363] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C364() {
+      return C[364] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C365() {
+      return C[365] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C366() {
+      return C[366] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C362() {
+      return C[362] = dart.constList([C[363] || CT.C363, C[364] || CT.C364, C[365] || CT.C365, C[366] || CT.C366], widget_inspector._Location);
+    },
+    get C361() {
+      return C[361] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[362] || CT.C362,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
+      });
+    },
+    get C369() {
+      return C[369] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 5,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C370() {
+      return C[370] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scrollDirection",
+        [_Location_column]: 5,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C371() {
+      return C[371] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 5,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C368() {
+      return C[368] = dart.constList([C[369] || CT.C369, C[370] || CT.C370, C[371] || CT.C371], widget_inspector._Location);
+    },
+    get C367() {
+      return C[367] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[368] || CT.C368,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 25,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/t_estoquePage.dart"
       });
     }
   }, false);
-  var C = Array(23).fill(void 0);
-  var I = [
-    "file:///C:/flutter/sdk/packages/flutter/lib/src/painting/alignment.dart",
-    "package:flutter/src/painting/alignment.dart"
-  ];
-  var _x = dart.privateName(alignment, "_x");
-  var _start = dart.privateName(alignment, "_start");
-  var _y = dart.privateName(alignment, "_y");
-  alignment.AlignmentGeometry = class AlignmentGeometry extends core.Object {
-    add(other) {
-      return new alignment._MixedAlignment.new(this[_x] + other[_x], this[_start] + other[_start], this[_y] + other[_y]);
-    }
-    static lerp(a, b, t) {
-      if (!(t !== null)) dart.assertFailed(null, I[0], 91, 12, "t != null");
-      if (a == null && b == null) return null;
-      if (a == null) return dart.nullCheck(b)['*'](t);
-      if (b == null) return a['*'](1.0 - t);
-      if (alignment.Alignment.is(a) && alignment.Alignment.is(b)) return alignment.Alignment.lerp(a, b, t);
-      if (alignment.AlignmentDirectional.is(a) && alignment.AlignmentDirectional.is(b)) return alignment.AlignmentDirectional.lerp(a, b, t);
-      return new alignment._MixedAlignment.new(dart.nullCheck(ui.lerpDouble(a[_x], b[_x], t)), dart.nullCheck(ui.lerpDouble(a[_start], b[_start], t)), dart.nullCheck(ui.lerpDouble(a[_y], b[_y], t)));
-    }
-    toString() {
-      if (this[_start] === 0.0) return alignment.Alignment._stringify(this[_x], this[_y]);
-      if (this[_x] === 0.0) return alignment.AlignmentDirectional._stringify(this[_start], this[_y]);
-      return alignment.Alignment._stringify(this[_x], this[_y]) + " + " + alignment.AlignmentDirectional._stringify(this[_start], 0.0);
-    }
-    _equals(other) {
-      if (other == null) return false;
-      return alignment.AlignmentGeometry.is(other) && other[_x] === this[_x] && other[_start] === this[_start] && other[_y] === this[_y];
-    }
-    get hashCode() {
-      return ui.hashValues(this[_x], this[_start], this[_y]);
+  var C = Array(372).fill(void 0);
+  var I = ["package:tupja/t_estoquePage.dart"];
+  t_estoquePage.Estoque = class Estoque extends framework.StatefulWidget {
+    createState() {
+      return new t_estoquePage._State.new();
     }
   };
-  (alignment.AlignmentGeometry.new = function() {
+  (t_estoquePage.Estoque.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    t_estoquePage.Estoque.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
     ;
-  }).prototype = alignment.AlignmentGeometry.prototype;
-  dart.addTypeTests(alignment.AlignmentGeometry);
-  dart.addTypeCaches(alignment.AlignmentGeometry);
-  dart.setMethodSignature(alignment.AlignmentGeometry, () => ({
-    __proto__: dart.getMethods(alignment.AlignmentGeometry.__proto__),
-    add: dart.fnType(alignment.AlignmentGeometry, [alignment.AlignmentGeometry])
+  }).prototype = t_estoquePage.Estoque.prototype;
+  dart.addTypeTests(t_estoquePage.Estoque);
+  dart.addTypeCaches(t_estoquePage.Estoque);
+  dart.setMethodSignature(t_estoquePage.Estoque, () => ({
+    __proto__: dart.getMethods(t_estoquePage.Estoque.__proto__),
+    createState: dart.fnType(t_estoquePage._State, [])
   }));
-  dart.setLibraryUri(alignment.AlignmentGeometry, I[1]);
-  dart.defineExtensionMethods(alignment.AlignmentGeometry, ['toString', '_equals']);
-  dart.defineExtensionAccessors(alignment.AlignmentGeometry, ['hashCode']);
-  var x$ = dart.privateName(alignment, "Alignment.x");
-  var y$ = dart.privateName(alignment, "Alignment.y");
-  alignment.Alignment = class Alignment extends alignment.AlignmentGeometry {
-    get x() {
-      return this[x$];
-    }
-    set x(value) {
-      super.x = value;
-    }
-    get y() {
-      return this[y$];
-    }
-    set y(value) {
-      super.y = value;
-    }
-    get [_x]() {
-      return this.x;
-    }
-    get [_start]() {
-      return 0.0;
-    }
-    get [_y]() {
-      return this.y;
-    }
-    add(other) {
-      if (alignment.Alignment.is(other)) return this['+'](other);
-      return super.add(other);
-    }
-    ['-'](other) {
-      return new alignment.Alignment.new(this.x - other.x, this.y - other.y);
-    }
-    ['+'](other) {
-      return new alignment.Alignment.new(this.x + other.x, this.y + other.y);
-    }
-    _negate() {
-      return new alignment.Alignment.new(-this.x, -this.y);
-    }
-    ['*'](other) {
-      return new alignment.Alignment.new(this.x * other, this.y * other);
-    }
-    ['/'](other) {
-      return new alignment.Alignment.new(this.x / other, this.y / other);
-    }
-    ['~/'](other) {
-      return new alignment.Alignment.new((this.x / other)[$truncate]()[$toDouble](), (this.y / other)[$truncate]()[$toDouble]());
-    }
-    ['%'](other) {
-      return new alignment.Alignment.new(this.x[$modulo](other), this.y[$modulo](other));
-    }
-    alongOffset(other) {
-      let centerX = other.dx / 2.0;
-      let centerY = other.dy / 2.0;
-      return new ui.Offset.new(centerX + this.x * centerX, centerY + this.y * centerY);
-    }
-    alongSize(other) {
-      let centerX = other.width / 2.0;
-      let centerY = other.height / 2.0;
-      return new ui.Offset.new(centerX + this.x * centerX, centerY + this.y * centerY);
-    }
-    withinRect(rect) {
-      let halfWidth = rect.width / 2.0;
-      let halfHeight = rect.height / 2.0;
-      return new ui.Offset.new(rect.left + halfWidth + this.x * halfWidth, rect.top + halfHeight + this.y * halfHeight);
-    }
-    inscribe(size, rect) {
-      let halfWidthDelta = (rect.width - size.width) / 2.0;
-      let halfHeightDelta = (rect.height - size.height) / 2.0;
-      return new ui.Rect.fromLTWH(rect.left + halfWidthDelta + this.x * halfWidthDelta, rect.top + halfHeightDelta + this.y * halfHeightDelta, size.width, size.height);
-    }
-    static lerp(a, b, t) {
-      if (!(t !== null)) dart.assertFailed(null, I[0], 336, 12, "t != null");
-      if (a == null && b == null) return null;
-      if (a == null) return new alignment.Alignment.new(dart.nullCheck(ui.lerpDouble(0.0, dart.nullCheck(b).x, t)), dart.nullCheck(ui.lerpDouble(0.0, b.y, t)));
-      if (b == null) return new alignment.Alignment.new(dart.nullCheck(ui.lerpDouble(a.x, 0.0, t)), dart.nullCheck(ui.lerpDouble(a.y, 0.0, t)));
-      return new alignment.Alignment.new(dart.nullCheck(ui.lerpDouble(a.x, b.x, t)), dart.nullCheck(ui.lerpDouble(a.y, b.y, t)));
-    }
-    resolve(direction) {
-      return this;
-    }
-    static _stringify(x, y) {
-      if (x === -1.0 && y === -1.0) return "Alignment.topLeft";
-      if (x === 0.0 && y === -1.0) return "Alignment.topCenter";
-      if (x === 1.0 && y === -1.0) return "Alignment.topRight";
-      if (x === -1.0 && y === 0.0) return "Alignment.centerLeft";
-      if (x === 0.0 && y === 0.0) return "Alignment.center";
-      if (x === 1.0 && y === 0.0) return "Alignment.centerRight";
-      if (x === -1.0 && y === 1.0) return "Alignment.bottomLeft";
-      if (x === 0.0 && y === 1.0) return "Alignment.bottomCenter";
-      if (x === 1.0 && y === 1.0) return "Alignment.bottomRight";
-      return "Alignment(" + x[$toStringAsFixed](1) + ", " + y[$toStringAsFixed](1) + ")";
-    }
-    toString() {
-      return alignment.Alignment._stringify(this.x, this.y);
+  dart.setLibraryUri(t_estoquePage.Estoque, I[0]);
+  var _count = dart.privateName(t_estoquePage, "_count");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  t_estoquePage._State = class _State extends framework.State$(t_estoquePage.Estoque) {
+    build(context) {
+      return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new("Estoque", {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), body: new container.Container.new({height: 500.0, child: t_estoquePage.carrousel(context), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10});
     }
   };
-  (alignment.Alignment.new = function(x, y) {
-    this[x$] = x;
-    this[y$] = y;
-    if (!(x !== null)) dart.assertFailed(null, I[0], 186, 14, "x != null");
-    if (!(y !== null)) dart.assertFailed(null, I[0], 187, 14, "y != null");
-    alignment.Alignment.__proto__.new.call(this);
+  (t_estoquePage._State.new = function() {
+    this[_count] = 0;
+    t_estoquePage._State.__proto__.new.call(this);
     ;
-  }).prototype = alignment.Alignment.prototype;
-  dart.addTypeTests(alignment.Alignment);
-  dart.addTypeCaches(alignment.Alignment);
-  dart.setMethodSignature(alignment.Alignment, () => ({
-    __proto__: dart.getMethods(alignment.Alignment.__proto__),
-    '-': dart.fnType(alignment.Alignment, [alignment.Alignment]),
-    '+': dart.fnType(alignment.Alignment, [alignment.Alignment]),
-    _negate: dart.fnType(alignment.Alignment, []),
-    '*': dart.fnType(alignment.Alignment, [core.double]),
-    '/': dart.fnType(alignment.Alignment, [core.double]),
-    '~/': dart.fnType(alignment.Alignment, [core.double]),
-    '%': dart.fnType(alignment.Alignment, [core.double]),
-    alongOffset: dart.fnType(ui.Offset, [ui.Offset]),
-    alongSize: dart.fnType(ui.Offset, [ui.Size]),
-    withinRect: dart.fnType(ui.Offset, [ui.Rect]),
-    inscribe: dart.fnType(ui.Rect, [ui.Size, ui.Rect]),
-    resolve: dart.fnType(alignment.Alignment, [dart.nullable(ui.TextDirection)])
+  }).prototype = t_estoquePage._State.prototype;
+  dart.addTypeTests(t_estoquePage._State);
+  dart.addTypeCaches(t_estoquePage._State);
+  dart.setMethodSignature(t_estoquePage._State, () => ({
+    __proto__: dart.getMethods(t_estoquePage._State.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
-  dart.setGetterSignature(alignment.Alignment, () => ({
-    __proto__: dart.getGetters(alignment.Alignment.__proto__),
-    [_x]: core.double,
-    [_start]: core.double,
-    [_y]: core.double
+  dart.setLibraryUri(t_estoquePage._State, I[0]);
+  dart.setFieldSignature(t_estoquePage._State, () => ({
+    __proto__: dart.getFields(t_estoquePage._State.__proto__),
+    [_count]: dart.fieldType(core.int)
   }));
-  dart.setLibraryUri(alignment.Alignment, I[1]);
-  dart.setFieldSignature(alignment.Alignment, () => ({
-    __proto__: dart.getFields(alignment.Alignment.__proto__),
-    x: dart.finalFieldType(core.double),
-    y: dart.finalFieldType(core.double)
-  }));
-  dart.defineExtensionMethods(alignment.Alignment, ['toString']);
-  dart.defineLazy(alignment.Alignment, {
-    /*alignment.Alignment.topLeft*/get topLeft() {
-      return C[0] || CT.C0;
-    },
-    /*alignment.Alignment.topCenter*/get topCenter() {
-      return C[1] || CT.C1;
-    },
-    /*alignment.Alignment.topRight*/get topRight() {
-      return C[2] || CT.C2;
-    },
-    /*alignment.Alignment.centerLeft*/get centerLeft() {
-      return C[3] || CT.C3;
-    },
-    /*alignment.Alignment.center*/get center() {
-      return C[4] || CT.C4;
-    },
-    /*alignment.Alignment.centerRight*/get centerRight() {
-      return C[5] || CT.C5;
-    },
-    /*alignment.Alignment.bottomLeft*/get bottomLeft() {
-      return C[6] || CT.C6;
-    },
-    /*alignment.Alignment.bottomCenter*/get bottomCenter() {
-      return C[7] || CT.C7;
-    },
-    /*alignment.Alignment.bottomRight*/get bottomRight() {
-      return C[8] || CT.C8;
-    }
-  }, false);
-  var start$ = dart.privateName(alignment, "AlignmentDirectional.start");
-  var y$0 = dart.privateName(alignment, "AlignmentDirectional.y");
-  var _name = dart.privateName(ui, "_name");
-  alignment.AlignmentDirectional = class AlignmentDirectional extends alignment.AlignmentGeometry {
-    get start() {
-      return this[start$];
-    }
-    set start(value) {
-      super.start = value;
-    }
-    get y() {
-      return this[y$0];
-    }
-    set y(value) {
-      super.y = value;
-    }
-    get [_x]() {
-      return 0.0;
-    }
-    get [_start]() {
-      return this.start;
-    }
-    get [_y]() {
-      return this.y;
-    }
-    add(other) {
-      if (alignment.AlignmentDirectional.is(other)) return this['+'](other);
-      return super.add(other);
-    }
-    ['-'](other) {
-      return new alignment.AlignmentDirectional.new(this.start - other.start, this.y - other.y);
-    }
-    ['+'](other) {
-      return new alignment.AlignmentDirectional.new(this.start + other.start, this.y + other.y);
-    }
-    _negate() {
-      return new alignment.AlignmentDirectional.new(-this.start, -this.y);
-    }
-    ['*'](other) {
-      return new alignment.AlignmentDirectional.new(this.start * other, this.y * other);
-    }
-    ['/'](other) {
-      return new alignment.AlignmentDirectional.new(this.start / other, this.y / other);
-    }
-    ['~/'](other) {
-      return new alignment.AlignmentDirectional.new((this.start / other)[$truncate]()[$toDouble](), (this.y / other)[$truncate]()[$toDouble]());
-    }
-    ['%'](other) {
-      return new alignment.AlignmentDirectional.new(this.start[$modulo](other), this.y[$modulo](other));
-    }
-    static lerp(a, b, t) {
-      if (!(t !== null)) dart.assertFailed(null, I[0], 517, 12, "t != null");
-      if (a == null && b == null) return null;
-      if (a == null) return new alignment.AlignmentDirectional.new(dart.nullCheck(ui.lerpDouble(0.0, dart.nullCheck(b).start, t)), dart.nullCheck(ui.lerpDouble(0.0, b.y, t)));
-      if (b == null) return new alignment.AlignmentDirectional.new(dart.nullCheck(ui.lerpDouble(a.start, 0.0, t)), dart.nullCheck(ui.lerpDouble(a.y, 0.0, t)));
-      return new alignment.AlignmentDirectional.new(dart.nullCheck(ui.lerpDouble(a.start, b.start, t)), dart.nullCheck(ui.lerpDouble(a.y, b.y, t)));
-    }
-    resolve(direction) {
-      if (!(direction != null)) dart.assertFailed("Cannot resolve " + dart.str(this[$runtimeType]) + " without a TextDirection.", I[0], 529, 12, "direction != null");
-      switch (dart.nullCheck(direction)) {
-        case C[9] || CT.C9:
-        {
-          return new alignment.Alignment.new(-this.start, this.y);
-        }
-        case C[10] || CT.C10:
-        {
-          return new alignment.Alignment.new(this.start, this.y);
-        }
-      }
-    }
-    static _stringify(start, y) {
-      if (start === -1.0 && y === -1.0) return "AlignmentDirectional.topStart";
-      if (start === 0.0 && y === -1.0) return "AlignmentDirectional.topCenter";
-      if (start === 1.0 && y === -1.0) return "AlignmentDirectional.topEnd";
-      if (start === -1.0 && y === 0.0) return "AlignmentDirectional.centerStart";
-      if (start === 0.0 && y === 0.0) return "AlignmentDirectional.center";
-      if (start === 1.0 && y === 0.0) return "AlignmentDirectional.centerEnd";
-      if (start === -1.0 && y === 1.0) return "AlignmentDirectional.bottomStart";
-      if (start === 0.0 && y === 1.0) return "AlignmentDirectional.bottomCenter";
-      if (start === 1.0 && y === 1.0) return "AlignmentDirectional.bottomEnd";
-      return "AlignmentDirectional(" + start[$toStringAsFixed](1) + ", " + y[$toStringAsFixed](1) + ")";
-    }
-    toString() {
-      return alignment.AlignmentDirectional._stringify(this.start, this.y);
+  t_estoquePage.Produto1 = class Produto1 extends framework.StatefulWidget {
+    createState() {
+      return new t_estoquePage._State2.new();
     }
   };
-  (alignment.AlignmentDirectional.new = function(start, y) {
-    this[start$] = start;
-    this[y$0] = y;
-    if (!(start !== null)) dart.assertFailed(null, I[0], 392, 14, "start != null");
-    if (!(y !== null)) dart.assertFailed(null, I[0], 393, 14, "y != null");
-    alignment.AlignmentDirectional.__proto__.new.call(this);
+  (t_estoquePage.Produto1.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    t_estoquePage.Produto1.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
     ;
-  }).prototype = alignment.AlignmentDirectional.prototype;
-  dart.addTypeTests(alignment.AlignmentDirectional);
-  dart.addTypeCaches(alignment.AlignmentDirectional);
-  dart.setMethodSignature(alignment.AlignmentDirectional, () => ({
-    __proto__: dart.getMethods(alignment.AlignmentDirectional.__proto__),
-    '-': dart.fnType(alignment.AlignmentDirectional, [alignment.AlignmentDirectional]),
-    '+': dart.fnType(alignment.AlignmentDirectional, [alignment.AlignmentDirectional]),
-    _negate: dart.fnType(alignment.AlignmentDirectional, []),
-    '*': dart.fnType(alignment.AlignmentDirectional, [core.double]),
-    '/': dart.fnType(alignment.AlignmentDirectional, [core.double]),
-    '~/': dart.fnType(alignment.AlignmentDirectional, [core.double]),
-    '%': dart.fnType(alignment.AlignmentDirectional, [core.double]),
-    resolve: dart.fnType(alignment.Alignment, [dart.nullable(ui.TextDirection)])
+  }).prototype = t_estoquePage.Produto1.prototype;
+  dart.addTypeTests(t_estoquePage.Produto1);
+  dart.addTypeCaches(t_estoquePage.Produto1);
+  dart.setMethodSignature(t_estoquePage.Produto1, () => ({
+    __proto__: dart.getMethods(t_estoquePage.Produto1.__proto__),
+    createState: dart.fnType(t_estoquePage._State2, [])
   }));
-  dart.setGetterSignature(alignment.AlignmentDirectional, () => ({
-    __proto__: dart.getGetters(alignment.AlignmentDirectional.__proto__),
-    [_x]: core.double,
-    [_start]: core.double,
-    [_y]: core.double
-  }));
-  dart.setLibraryUri(alignment.AlignmentDirectional, I[1]);
-  dart.setFieldSignature(alignment.AlignmentDirectional, () => ({
-    __proto__: dart.getFields(alignment.AlignmentDirectional.__proto__),
-    start: dart.finalFieldType(core.double),
-    y: dart.finalFieldType(core.double)
-  }));
-  dart.defineExtensionMethods(alignment.AlignmentDirectional, ['toString']);
-  dart.defineLazy(alignment.AlignmentDirectional, {
-    /*alignment.AlignmentDirectional.topStart*/get topStart() {
-      return C[11] || CT.C11;
-    },
-    /*alignment.AlignmentDirectional.topCenter*/get topCenter() {
-      return C[12] || CT.C12;
-    },
-    /*alignment.AlignmentDirectional.topEnd*/get topEnd() {
-      return C[13] || CT.C13;
-    },
-    /*alignment.AlignmentDirectional.centerStart*/get centerStart() {
-      return C[14] || CT.C14;
-    },
-    /*alignment.AlignmentDirectional.center*/get center() {
-      return C[15] || CT.C15;
-    },
-    /*alignment.AlignmentDirectional.centerEnd*/get centerEnd() {
-      return C[16] || CT.C16;
-    },
-    /*alignment.AlignmentDirectional.bottomStart*/get bottomStart() {
-      return C[17] || CT.C17;
-    },
-    /*alignment.AlignmentDirectional.bottomCenter*/get bottomCenter() {
-      return C[18] || CT.C18;
-    },
-    /*alignment.AlignmentDirectional.bottomEnd*/get bottomEnd() {
-      return C[19] || CT.C19;
-    }
-  }, false);
-  var _x$ = dart.privateName(alignment, "_MixedAlignment._x");
-  var _start$ = dart.privateName(alignment, "_MixedAlignment._start");
-  var _y$ = dart.privateName(alignment, "_MixedAlignment._y");
-  alignment._MixedAlignment = class _MixedAlignment extends alignment.AlignmentGeometry {
-    get [_x]() {
-      return this[_x$];
-    }
-    set [_x](value) {
-      super[_x] = value;
-    }
-    get [_start]() {
-      return this[_start$];
-    }
-    set [_start](value) {
-      super[_start] = value;
-    }
-    get [_y]() {
-      return this[_y$];
-    }
-    set [_y](value) {
-      super[_y] = value;
-    }
-    _negate() {
-      return new alignment._MixedAlignment.new(-this[_x], -this[_start], -this[_y]);
-    }
-    ['*'](other) {
-      return new alignment._MixedAlignment.new(this[_x] * other, this[_start] * other, this[_y] * other);
-    }
-    ['/'](other) {
-      return new alignment._MixedAlignment.new(this[_x] / other, this[_start] / other, this[_y] / other);
-    }
-    ['~/'](other) {
-      return new alignment._MixedAlignment.new((this[_x] / other)[$truncate]()[$toDouble](), (this[_start] / other)[$truncate]()[$toDouble](), (this[_y] / other)[$truncate]()[$toDouble]());
-    }
-    ['%'](other) {
-      return new alignment._MixedAlignment.new(this[_x][$modulo](other), this[_start][$modulo](other), this[_y][$modulo](other));
-    }
-    resolve(direction) {
-      if (!(direction != null)) dart.assertFailed("Cannot resolve " + dart.str(this[$runtimeType]) + " without a TextDirection.", I[0], 624, 12, "direction != null");
-      switch (dart.nullCheck(direction)) {
-        case C[9] || CT.C9:
-        {
-          return new alignment.Alignment.new(this[_x] - this[_start], this[_y]);
-        }
-        case C[10] || CT.C10:
-        {
-          return new alignment.Alignment.new(this[_x] + this[_start], this[_y]);
-        }
-      }
+  dart.setLibraryUri(t_estoquePage.Produto1, I[0]);
+  var _qtdProd1 = dart.privateName(t_estoquePage, "_qtdProd1");
+  t_estoquePage._State2 = class _State2 extends framework.State$(t_estoquePage.Produto1) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Vermelha \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[14] || CT.C14})]), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.SizedBox.new({height: 100.0, width: 100.0, child: new image.Image.network("https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1636819171\n", {$creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), $creationLocationd_0dea112b090073317d4: C[32] || CT.C32})]), $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque: " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41})]), $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[47] || CT.C47})]), $creationLocationd_0dea112b090073317d4: C[50] || CT.C50}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[53] || CT.C53}), $creationLocationd_0dea112b090073317d4: C[56] || CT.C56})]), $creationLocationd_0dea112b090073317d4: C[59] || CT.C59}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[62] || CT.C62})]), $creationLocationd_0dea112b090073317d4: C[65] || CT.C65}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[68] || CT.C68}), $creationLocationd_0dea112b090073317d4: C[71] || CT.C71}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[75] || CT.C75}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[78] || CT.C78}), $creationLocationd_0dea112b090073317d4: C[81] || CT.C81})]), $creationLocationd_0dea112b090073317d4: C[85] || CT.C85})]), $creationLocationd_0dea112b090073317d4: C[88] || CT.C88}), $creationLocationd_0dea112b090073317d4: C[91] || CT.C91});
     }
   };
-  (alignment._MixedAlignment.new = function(_x, _start, _y) {
-    this[_x$] = _x;
-    this[_start$] = _start;
-    this[_y$] = _y;
-    alignment._MixedAlignment.__proto__.new.call(this);
+  (t_estoquePage._State2.new = function() {
+    this[_qtdProd1] = 0;
+    t_estoquePage._State2.__proto__.new.call(this);
     ;
-  }).prototype = alignment._MixedAlignment.prototype;
-  dart.addTypeTests(alignment._MixedAlignment);
-  dart.addTypeCaches(alignment._MixedAlignment);
-  dart.setMethodSignature(alignment._MixedAlignment, () => ({
-    __proto__: dart.getMethods(alignment._MixedAlignment.__proto__),
-    _negate: dart.fnType(alignment._MixedAlignment, []),
-    '*': dart.fnType(alignment._MixedAlignment, [core.double]),
-    '/': dart.fnType(alignment._MixedAlignment, [core.double]),
-    '~/': dart.fnType(alignment._MixedAlignment, [core.double]),
-    '%': dart.fnType(alignment._MixedAlignment, [core.double]),
-    resolve: dart.fnType(alignment.Alignment, [dart.nullable(ui.TextDirection)])
+  }).prototype = t_estoquePage._State2.prototype;
+  dart.addTypeTests(t_estoquePage._State2);
+  dart.addTypeCaches(t_estoquePage._State2);
+  dart.setMethodSignature(t_estoquePage._State2, () => ({
+    __proto__: dart.getMethods(t_estoquePage._State2.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
-  dart.setLibraryUri(alignment._MixedAlignment, I[1]);
-  dart.setFieldSignature(alignment._MixedAlignment, () => ({
-    __proto__: dart.getFields(alignment._MixedAlignment.__proto__),
-    [_x]: dart.finalFieldType(core.double),
-    [_start]: dart.finalFieldType(core.double),
-    [_y]: dart.finalFieldType(core.double)
+  dart.setLibraryUri(t_estoquePage._State2, I[0]);
+  dart.setFieldSignature(t_estoquePage._State2, () => ({
+    __proto__: dart.getFields(t_estoquePage._State2.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
   }));
-  var y$1 = dart.privateName(alignment, "TextAlignVertical.y");
-  alignment.TextAlignVertical = class TextAlignVertical extends core.Object {
-    get y() {
-      return this[y$1];
-    }
-    set y(value) {
-      super.y = value;
-    }
-    toString() {
-      return object.objectRuntimeType(this, "TextAlignVertical") + "(y: " + dart.str(this.y) + ")";
+  t_estoquePage.Produto2 = class Produto2 extends framework.StatefulWidget {
+    createState() {
+      return new t_estoquePage._State3.new();
     }
   };
-  (alignment.TextAlignVertical.new = function(opts) {
-    let y = opts && 'y' in opts ? opts.y : null;
-    this[y$1] = y;
-    if (!(y !== null)) dart.assertFailed(null, I[0], 653, 15, "y != null");
-    if (!(y >= -1.0 && y <= 1.0)) dart.assertFailed(null, I[0], 654, 15, "y >= -1.0 && y <= 1.0");
+  (t_estoquePage.Produto2.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    t_estoquePage.Produto2.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
     ;
-  }).prototype = alignment.TextAlignVertical.prototype;
-  dart.addTypeTests(alignment.TextAlignVertical);
-  dart.addTypeCaches(alignment.TextAlignVertical);
-  dart.setLibraryUri(alignment.TextAlignVertical, I[1]);
-  dart.setFieldSignature(alignment.TextAlignVertical, () => ({
-    __proto__: dart.getFields(alignment.TextAlignVertical.__proto__),
-    y: dart.finalFieldType(core.double)
+  }).prototype = t_estoquePage.Produto2.prototype;
+  dart.addTypeTests(t_estoquePage.Produto2);
+  dart.addTypeCaches(t_estoquePage.Produto2);
+  dart.setMethodSignature(t_estoquePage.Produto2, () => ({
+    __proto__: dart.getMethods(t_estoquePage.Produto2.__proto__),
+    createState: dart.fnType(t_estoquePage._State3, [])
   }));
-  dart.defineExtensionMethods(alignment.TextAlignVertical, ['toString']);
-  dart.defineLazy(alignment.TextAlignVertical, {
-    /*alignment.TextAlignVertical.top*/get top() {
-      return C[20] || CT.C20;
-    },
-    /*alignment.TextAlignVertical.center*/get center() {
-      return C[21] || CT.C21;
-    },
-    /*alignment.TextAlignVertical.bottom*/get bottom() {
-      return C[22] || CT.C22;
+  dart.setLibraryUri(t_estoquePage.Produto2, I[0]);
+  t_estoquePage._State3 = class _State3 extends framework.State$(t_estoquePage.Produto2) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Amarela \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[95] || CT.C95})]), $creationLocationd_0dea112b090073317d4: C[99] || CT.C99}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.SizedBox.new({height: 100.0, width: 100.0, child: new image.Image.network("https://http2.mlstatic.com/D_NQ_NP_2X_947438-MLB42246588617_062020-F.webp\n", {$creationLocationd_0dea112b090073317d4: C[102] || CT.C102}), $creationLocationd_0dea112b090073317d4: C[105] || CT.C105}), new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[110] || CT.C110}), $creationLocationd_0dea112b090073317d4: C[113] || CT.C113})]), $creationLocationd_0dea112b090073317d4: C[116] || CT.C116}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque: " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[119] || CT.C119}), $creationLocationd_0dea112b090073317d4: C[122] || CT.C122})]), $creationLocationd_0dea112b090073317d4: C[125] || CT.C125}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[128] || CT.C128})]), $creationLocationd_0dea112b090073317d4: C[131] || CT.C131}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[134] || CT.C134}), $creationLocationd_0dea112b090073317d4: C[137] || CT.C137})]), $creationLocationd_0dea112b090073317d4: C[140] || CT.C140}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[143] || CT.C143})]), $creationLocationd_0dea112b090073317d4: C[146] || CT.C146}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[149] || CT.C149}), $creationLocationd_0dea112b090073317d4: C[152] || CT.C152}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[156] || CT.C156}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[159] || CT.C159}), $creationLocationd_0dea112b090073317d4: C[162] || CT.C162})]), $creationLocationd_0dea112b090073317d4: C[166] || CT.C166})]), $creationLocationd_0dea112b090073317d4: C[169] || CT.C169}), $creationLocationd_0dea112b090073317d4: C[172] || CT.C172});
     }
-  }, false);
-  dart.trackLibraries("packages/flutter/src/painting/alignment.dart", {
-    "package:flutter/src/painting/alignment.dart": alignment
+  };
+  (t_estoquePage._State3.new = function() {
+    this[_qtdProd1] = 0;
+    t_estoquePage._State3.__proto__.new.call(this);
+    ;
+  }).prototype = t_estoquePage._State3.prototype;
+  dart.addTypeTests(t_estoquePage._State3);
+  dart.addTypeCaches(t_estoquePage._State3);
+  dart.setMethodSignature(t_estoquePage._State3, () => ({
+    __proto__: dart.getMethods(t_estoquePage._State3.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(t_estoquePage._State3, I[0]);
+  dart.setFieldSignature(t_estoquePage._State3, () => ({
+    __proto__: dart.getFields(t_estoquePage._State3.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  t_estoquePage.Produto3 = class Produto3 extends framework.StatefulWidget {
+    createState() {
+      return new t_estoquePage._State4.new();
+    }
+  };
+  (t_estoquePage.Produto3.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    t_estoquePage.Produto3.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = t_estoquePage.Produto3.prototype;
+  dart.addTypeTests(t_estoquePage.Produto3);
+  dart.addTypeCaches(t_estoquePage.Produto3);
+  dart.setMethodSignature(t_estoquePage.Produto3, () => ({
+    __proto__: dart.getMethods(t_estoquePage.Produto3.__proto__),
+    createState: dart.fnType(t_estoquePage._State4, [])
+  }));
+  dart.setLibraryUri(t_estoquePage.Produto3, I[0]);
+  t_estoquePage._State4 = class _State4 extends framework.State$(t_estoquePage.Produto3) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Azul \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[176] || CT.C176})]), $creationLocationd_0dea112b090073317d4: C[180] || CT.C180}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.SizedBox.new({height: 100.0, width: 100.0, child: new image.Image.network("https://images-shoptime.b2w.io/produtos/01/00/img/1641315/7/1641315707_1SZ.jpg", {$creationLocationd_0dea112b090073317d4: C[183] || CT.C183}), $creationLocationd_0dea112b090073317d4: C[186] || CT.C186}), new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[191] || CT.C191}), $creationLocationd_0dea112b090073317d4: C[194] || CT.C194})]), $creationLocationd_0dea112b090073317d4: C[197] || CT.C197}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque: " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[200] || CT.C200}), $creationLocationd_0dea112b090073317d4: C[203] || CT.C203})]), $creationLocationd_0dea112b090073317d4: C[206] || CT.C206}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[209] || CT.C209})]), $creationLocationd_0dea112b090073317d4: C[212] || CT.C212}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[215] || CT.C215}), $creationLocationd_0dea112b090073317d4: C[218] || CT.C218})]), $creationLocationd_0dea112b090073317d4: C[221] || CT.C221}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[224] || CT.C224})]), $creationLocationd_0dea112b090073317d4: C[227] || CT.C227}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[230] || CT.C230}), $creationLocationd_0dea112b090073317d4: C[233] || CT.C233}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[237] || CT.C237}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[240] || CT.C240}), $creationLocationd_0dea112b090073317d4: C[243] || CT.C243})]), $creationLocationd_0dea112b090073317d4: C[247] || CT.C247})]), $creationLocationd_0dea112b090073317d4: C[250] || CT.C250}), $creationLocationd_0dea112b090073317d4: C[253] || CT.C253});
+    }
+  };
+  (t_estoquePage._State4.new = function() {
+    this[_qtdProd1] = 0;
+    t_estoquePage._State4.__proto__.new.call(this);
+    ;
+  }).prototype = t_estoquePage._State4.prototype;
+  dart.addTypeTests(t_estoquePage._State4);
+  dart.addTypeCaches(t_estoquePage._State4);
+  dart.setMethodSignature(t_estoquePage._State4, () => ({
+    __proto__: dart.getMethods(t_estoquePage._State4.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(t_estoquePage._State4, I[0]);
+  dart.setFieldSignature(t_estoquePage._State4, () => ({
+    __proto__: dart.getFields(t_estoquePage._State4.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  t_estoquePage.Produto4 = class Produto4 extends framework.StatefulWidget {
+    createState() {
+      return new t_estoquePage._State5.new();
+    }
+  };
+  (t_estoquePage.Produto4.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    t_estoquePage.Produto4.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = t_estoquePage.Produto4.prototype;
+  dart.addTypeTests(t_estoquePage.Produto4);
+  dart.addTypeCaches(t_estoquePage.Produto4);
+  dart.setMethodSignature(t_estoquePage.Produto4, () => ({
+    __proto__: dart.getMethods(t_estoquePage.Produto4.__proto__),
+    createState: dart.fnType(t_estoquePage._State5, [])
+  }));
+  dart.setLibraryUri(t_estoquePage.Produto4, I[0]);
+  t_estoquePage._State5 = class _State5 extends framework.State$(t_estoquePage.Produto4) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Cigarro de Palha \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[257] || CT.C257})]), $creationLocationd_0dea112b090073317d4: C[261] || CT.C261}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.SizedBox.new({height: 100.0, width: 100.0, child: new image.Image.network("https://imageswscdn.plataformawebstore.com.br//files/21791/cigarro-de-palha-crioulos-com-14-cigarros-de-palha-306814.peg", {$creationLocationd_0dea112b090073317d4: C[264] || CT.C264}), $creationLocationd_0dea112b090073317d4: C[267] || CT.C267}), new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n\n", {$creationLocationd_0dea112b090073317d4: C[272] || CT.C272}), $creationLocationd_0dea112b090073317d4: C[275] || CT.C275})]), $creationLocationd_0dea112b090073317d4: C[278] || CT.C278}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque: " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[281] || CT.C281}), $creationLocationd_0dea112b090073317d4: C[284] || CT.C284})]), $creationLocationd_0dea112b090073317d4: C[287] || CT.C287}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[290] || CT.C290})]), $creationLocationd_0dea112b090073317d4: C[293] || CT.C293}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[296] || CT.C296}), $creationLocationd_0dea112b090073317d4: C[299] || CT.C299})]), $creationLocationd_0dea112b090073317d4: C[302] || CT.C302}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[305] || CT.C305})]), $creationLocationd_0dea112b090073317d4: C[308] || CT.C308}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[311] || CT.C311}), $creationLocationd_0dea112b090073317d4: C[314] || CT.C314}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[318] || CT.C318}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[321] || CT.C321}), $creationLocationd_0dea112b090073317d4: C[324] || CT.C324})]), $creationLocationd_0dea112b090073317d4: C[328] || CT.C328})]), $creationLocationd_0dea112b090073317d4: C[331] || CT.C331}), $creationLocationd_0dea112b090073317d4: C[334] || CT.C334});
+    }
+  };
+  (t_estoquePage._State5.new = function() {
+    this[_qtdProd1] = 0;
+    t_estoquePage._State5.__proto__.new.call(this);
+    ;
+  }).prototype = t_estoquePage._State5.prototype;
+  dart.addTypeTests(t_estoquePage._State5);
+  dart.addTypeCaches(t_estoquePage._State5);
+  dart.setMethodSignature(t_estoquePage._State5, () => ({
+    __proto__: dart.getMethods(t_estoquePage._State5.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(t_estoquePage._State5, I[0]);
+  dart.setFieldSignature(t_estoquePage._State5, () => ({
+    __proto__: dart.getFields(t_estoquePage._State5.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  t_estoquePage.carrousel = function carrousel(context) {
+    return new scroll_view.ListView.new({padding: new edge_insets.EdgeInsets.all(10.0), scrollDirection: basic_types.Axis.horizontal, children: T.JSArrayOfWidget().of([new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.red._get(50), child: new t_estoquePage.Produto1.new({$creationLocationd_0dea112b090073317d4: C[338] || CT.C338}), $creationLocationd_0dea112b090073317d4: C[340] || CT.C340}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.green._get(50), child: new t_estoquePage.Produto2.new({$creationLocationd_0dea112b090073317d4: C[346] || CT.C346}), $creationLocationd_0dea112b090073317d4: C[347] || CT.C347}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.yellow._get(50), child: new t_estoquePage.Produto3.new({$creationLocationd_0dea112b090073317d4: C[353] || CT.C353}), $creationLocationd_0dea112b090073317d4: C[354] || CT.C354}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.orange._get(50), child: new t_estoquePage.Produto4.new({$creationLocationd_0dea112b090073317d4: C[360] || CT.C360}), $creationLocationd_0dea112b090073317d4: C[361] || CT.C361})]), $creationLocationd_0dea112b090073317d4: C[367] || CT.C367});
+  };
+  dart.trackLibraries("packages/tupja/t_estoquePage.dart", {
+    "package:tupja/t_estoquePage.dart": t_estoquePage
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["alignment.dart"],"names":[],"mappings":"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","file":"../../../../../../../../D:/packages/flutter/src/painting/alignment.dart.lib.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["t_estoquePage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;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","file":"../../../packages/tupja/t_estoquePage.dart.lib.js"}');
   // Exports:
   return {
-    src__painting__alignment: alignment
+    t_estoquePage: t_estoquePage
   };
 }));
 
-//# sourceMappingURL=alignment.dart.lib.js.map
+//# sourceMappingURL=t_estoquePage.dart.lib.js.map
