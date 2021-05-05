@@ -134,13 +134,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "tupja",
+      "name": "projeto_TUPJA",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-04-28T02:12:21.096853Z",
+  "generated": "2021-05-05T03:32:17.297482Z",
   "generator": "pub",
   "generatorVersion": "2.13.0-211.6.beta"
 }
