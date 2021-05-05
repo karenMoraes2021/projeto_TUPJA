@@ -3,9 +3,9 @@
 //
 
 import 'package:flutter/material.dart';
-import 'package:projeto_TUPJA/t_configPages.dart';
-import 'package:projeto_TUPJA/t_estoquePage.dart';
-import 'package:projeto_TUPJA/t_recadosPage.dart';
+import 'package:tupja/t_configPages.dart';
+import 'package:tupja/t_estoquePage.dart';
+import 'package:tupja/t_recadosPage.dart';
 import 'loginPage.dart';
 import 't_sobrePage.dart';
 import 't_cadastroMedPage.dart';

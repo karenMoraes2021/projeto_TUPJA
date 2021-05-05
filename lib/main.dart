@@ -3,7 +3,7 @@
 //
 
 import 'package:flutter/material.dart';
-import 'package:projeto_TUPJA/t_configPages.dart';
+import 'package:tupja/t_configPages.dart';
 import 'loginPage.dart';
 import 't_menuPage.dart';
 import 't_sobrePage.dart';
