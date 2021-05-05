@@ -9,7 +9,7 @@ class ListViewSepareted extends StatefulWidget {
 }
 
 class _ListViewSeparetedState extends State<ListViewSepareted> {
-  //lista dinâmica simplesmente encadeada
+
 
   @override
   Widget build(BuildContext context) {
@@ -72,10 +72,19 @@ class _State2 extends State<Produto1> {
       margin: EdgeInsets.all(20),
       child: Column(
         children: [
-          //Row(), // Imagem
+          Row(children: [
+            Container(
+              width: 50,
+              height: 50,
+              child: ClipRRect(
+                child: Center(child: Image.asset('lib/imagem/branca.png')),
+              ),
+            ),
+          ],), // Imagem
           Row(children: [
             Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
-          ]), // Identificação
+          ]), 
+          // Identificação
           Row(children: [
             Expanded(
                 child: Text(
@@ -83,7 +92,7 @@ class _State2 extends State<Produto1> {
           ]), // Descrição
           Row(children: [
             Chip(
-              label: Text('Em Estoque! $_qtdProd1'),
+              label: Text('Em Estoque: $_qtdProd1'),
             )
           ]),
           Row(children: [

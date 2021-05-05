@@ -1,0 +1,3100 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/material/chip.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/painting/basic_types.dart', 'packages/flutter/src/material/colors.dart'], (function load__packages__tupja__ListViewSepareted_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__material__chip$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__painting__basic_types$46dart, packages__flutter__src__material__colors$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const text_button = packages__flutter__src__material__icon_button$46dart.src__material__text_button;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const chip = packages__flutter__src__material__chip$46dart.src__material__chip;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const basic_types = packages__flutter__src__painting__basic_types$46dart.src__painting__basic_types;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  var ListViewSepareted = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 34,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 17,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 22,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 17,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 9,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 38,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 81,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 80,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 79,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 15,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 15,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.constList([C[25] || CT.C25, C[26] || CT.C26, C[27] || CT.C27], widget_inspector._Location);
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[24] || CT.C24,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], widget_inspector._Location);
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 36,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33, C[34] || CT.C34], widget_inspector._Location);
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 87,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37], widget_inspector._Location);
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 91,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46], widget_inspector._Location);
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 90,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.constList([C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[48] || CT.C48,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 97,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52], widget_inspector._Location);
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 96,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 95,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.constList([C[55] || CT.C55], widget_inspector._Location);
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[54] || CT.C54,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 95,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58], widget_inspector._Location);
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 101,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 100,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61], widget_inspector._Location);
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 100,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.constList([C[64] || CT.C64], widget_inspector._Location);
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[63] || CT.C63,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 105,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67], widget_inspector._Location);
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 104,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70], widget_inspector._Location);
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 103,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 109,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.constList([C[73] || CT.C73], widget_inspector._Location);
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[72] || CT.C72,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 109,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 108,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.constList([C[76] || CT.C76], widget_inspector._Location);
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[75] || CT.C75,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 108,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 116,
+        [_Location_file]: null
+      });
+    },
+    get C78() {
+      return C[78] = dart.constList([C[79] || CT.C79], widget_inspector._Location);
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[78] || CT.C78,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 116,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 116,
+        [_Location_file]: null
+      });
+    },
+    get C81() {
+      return C[81] = dart.constList([C[82] || CT.C82, C[83] || CT.C83], widget_inspector._Location);
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[81] || CT.C81,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 113,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 17,
+        [_Location_line]: 118,
+        [_Location_file]: null
+      });
+    },
+    get C85() {
+      return C[85] = dart.constList([C[86] || CT.C86], widget_inspector._Location);
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[85] || CT.C85,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 117,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 123,
+        [_Location_file]: null
+      });
+    },
+    get C88() {
+      return C[88] = dart.constList([C[89] || CT.C89], widget_inspector._Location);
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[88] || CT.C88,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 123,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 121,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 123,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.constList([C[92] || CT.C92, C[93] || CT.C93], widget_inspector._Location);
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[91] || CT.C91,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 120,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 112,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.constList([C[96] || CT.C96], widget_inspector._Location);
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[95] || CT.C95,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 111,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 74,
+        [_Location_file]: null
+      });
+    },
+    get C98() {
+      return C[98] = dart.constList([C[99] || CT.C99], widget_inspector._Location);
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[98] || CT.C98,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 73,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.constList([C[102] || CT.C102, C[103] || CT.C103], widget_inspector._Location);
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[101] || CT.C101,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 36,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C105() {
+      return C[105] = dart.constList([C[106] || CT.C106, C[107] || CT.C107], widget_inspector._Location);
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[105] || CT.C105,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 150,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 149,
+        [_Location_file]: null
+      });
+    },
+    get C109() {
+      return C[109] = dart.constList([C[110] || CT.C110], widget_inspector._Location);
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[109] || CT.C109,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 149,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 155,
+        [_Location_file]: null
+      });
+    },
+    get C112() {
+      return C[112] = dart.constList([C[113] || CT.C113], widget_inspector._Location);
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[112] || CT.C112,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 154,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 154,
+        [_Location_file]: null
+      });
+    },
+    get C115() {
+      return C[115] = dart.constList([C[116] || CT.C116], widget_inspector._Location);
+    },
+    get C114() {
+      return C[114] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[115] || CT.C115,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 153,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 152,
+        [_Location_file]: null
+      });
+    },
+    get C118() {
+      return C[118] = dart.constList([C[119] || CT.C119], widget_inspector._Location);
+    },
+    get C117() {
+      return C[117] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[118] || CT.C118,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 152,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C122() {
+      return C[122] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 159,
+        [_Location_file]: null
+      });
+    },
+    get C121() {
+      return C[121] = dart.constList([C[122] || CT.C122], widget_inspector._Location);
+    },
+    get C120() {
+      return C[120] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[121] || CT.C121,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 159,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C125() {
+      return C[125] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 159,
+        [_Location_file]: null
+      });
+    },
+    get C124() {
+      return C[124] = dart.constList([C[125] || CT.C125], widget_inspector._Location);
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[124] || CT.C124,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 158,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C128() {
+      return C[128] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 157,
+        [_Location_file]: null
+      });
+    },
+    get C127() {
+      return C[127] = dart.constList([C[128] || CT.C128], widget_inspector._Location);
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[127] || CT.C127,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 157,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C131() {
+      return C[131] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 163,
+        [_Location_file]: null
+      });
+    },
+    get C130() {
+      return C[130] = dart.constList([C[131] || CT.C131], widget_inspector._Location);
+    },
+    get C129() {
+      return C[129] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[130] || CT.C130,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 163,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C133() {
+      return C[133] = dart.constList([C[134] || CT.C134], widget_inspector._Location);
+    },
+    get C132() {
+      return C[132] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[133] || CT.C133,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 162,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 167,
+        [_Location_file]: null
+      });
+    },
+    get C136() {
+      return C[136] = dart.constList([C[137] || CT.C137], widget_inspector._Location);
+    },
+    get C135() {
+      return C[135] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[136] || CT.C136,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 167,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 167,
+        [_Location_file]: null
+      });
+    },
+    get C139() {
+      return C[139] = dart.constList([C[140] || CT.C140], widget_inspector._Location);
+    },
+    get C138() {
+      return C[138] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[139] || CT.C139,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 166,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C143() {
+      return C[143] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C142() {
+      return C[142] = dart.constList([C[143] || CT.C143], widget_inspector._Location);
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[142] || CT.C142,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 165,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C146() {
+      return C[146] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 171,
+        [_Location_file]: null
+      });
+    },
+    get C145() {
+      return C[145] = dart.constList([C[146] || CT.C146], widget_inspector._Location);
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[145] || CT.C145,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 171,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 170,
+        [_Location_file]: null
+      });
+    },
+    get C148() {
+      return C[148] = dart.constList([C[149] || CT.C149], widget_inspector._Location);
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[148] || CT.C148,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 170,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 178,
+        [_Location_file]: null
+      });
+    },
+    get C151() {
+      return C[151] = dart.constList([C[152] || CT.C152], widget_inspector._Location);
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[151] || CT.C151,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 178,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 176,
+        [_Location_file]: null
+      });
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 178,
+        [_Location_file]: null
+      });
+    },
+    get C154() {
+      return C[154] = dart.constList([C[155] || CT.C155, C[156] || CT.C156], widget_inspector._Location);
+    },
+    get C153() {
+      return C[153] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[154] || CT.C154,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 175,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 17,
+        [_Location_line]: 180,
+        [_Location_file]: null
+      });
+    },
+    get C158() {
+      return C[158] = dart.constList([C[159] || CT.C159], widget_inspector._Location);
+    },
+    get C157() {
+      return C[157] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[158] || CT.C158,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 179,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C162() {
+      return C[162] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 185,
+        [_Location_file]: null
+      });
+    },
+    get C161() {
+      return C[161] = dart.constList([C[162] || CT.C162], widget_inspector._Location);
+    },
+    get C160() {
+      return C[160] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[161] || CT.C161,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 185,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 183,
+        [_Location_file]: null
+      });
+    },
+    get C166() {
+      return C[166] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 185,
+        [_Location_file]: null
+      });
+    },
+    get C164() {
+      return C[164] = dart.constList([C[165] || CT.C165, C[166] || CT.C166], widget_inspector._Location);
+    },
+    get C163() {
+      return C[163] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[164] || CT.C164,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 182,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C169() {
+      return C[169] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 174,
+        [_Location_file]: null
+      });
+    },
+    get C168() {
+      return C[168] = dart.constList([C[169] || CT.C169], widget_inspector._Location);
+    },
+    get C167() {
+      return C[167] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[168] || CT.C168,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 173,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C172() {
+      return C[172] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 147,
+        [_Location_file]: null
+      });
+    },
+    get C171() {
+      return C[171] = dart.constList([C[172] || CT.C172], widget_inspector._Location);
+    },
+    get C170() {
+      return C[170] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[171] || CT.C171,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 146,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C175() {
+      return C[175] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 145,
+        [_Location_file]: null
+      });
+    },
+    get C176() {
+      return C[176] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 146,
+        [_Location_file]: null
+      });
+    },
+    get C174() {
+      return C[174] = dart.constList([C[175] || CT.C175, C[176] || CT.C176], widget_inspector._Location);
+    },
+    get C173() {
+      return C[173] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[174] || CT.C174,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 144,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 212,
+        [_Location_file]: null
+      });
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 36,
+        [_Location_line]: 212,
+        [_Location_file]: null
+      });
+    },
+    get C178() {
+      return C[178] = dart.constList([C[179] || CT.C179, C[180] || CT.C180], widget_inspector._Location);
+    },
+    get C177() {
+      return C[177] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[178] || CT.C178,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 212,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C183() {
+      return C[183] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 211,
+        [_Location_file]: null
+      });
+    },
+    get C182() {
+      return C[182] = dart.constList([C[183] || CT.C183], widget_inspector._Location);
+    },
+    get C181() {
+      return C[181] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[182] || CT.C182,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 211,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 217,
+        [_Location_file]: null
+      });
+    },
+    get C185() {
+      return C[185] = dart.constList([C[186] || CT.C186], widget_inspector._Location);
+    },
+    get C184() {
+      return C[184] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[185] || CT.C185,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 216,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C189() {
+      return C[189] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 216,
+        [_Location_file]: null
+      });
+    },
+    get C188() {
+      return C[188] = dart.constList([C[189] || CT.C189], widget_inspector._Location);
+    },
+    get C187() {
+      return C[187] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[188] || CT.C188,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 215,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C192() {
+      return C[192] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 214,
+        [_Location_file]: null
+      });
+    },
+    get C191() {
+      return C[191] = dart.constList([C[192] || CT.C192], widget_inspector._Location);
+    },
+    get C190() {
+      return C[190] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[191] || CT.C191,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 214,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C195() {
+      return C[195] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 221,
+        [_Location_file]: null
+      });
+    },
+    get C194() {
+      return C[194] = dart.constList([C[195] || CT.C195], widget_inspector._Location);
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[194] || CT.C194,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 221,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C198() {
+      return C[198] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 221,
+        [_Location_file]: null
+      });
+    },
+    get C197() {
+      return C[197] = dart.constList([C[198] || CT.C198], widget_inspector._Location);
+    },
+    get C196() {
+      return C[196] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[197] || CT.C197,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 220,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C201() {
+      return C[201] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 219,
+        [_Location_file]: null
+      });
+    },
+    get C200() {
+      return C[200] = dart.constList([C[201] || CT.C201], widget_inspector._Location);
+    },
+    get C199() {
+      return C[199] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[200] || CT.C200,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 219,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C204() {
+      return C[204] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 225,
+        [_Location_file]: null
+      });
+    },
+    get C203() {
+      return C[203] = dart.constList([C[204] || CT.C204], widget_inspector._Location);
+    },
+    get C202() {
+      return C[202] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[203] || CT.C203,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 225,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C207() {
+      return C[207] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 224,
+        [_Location_file]: null
+      });
+    },
+    get C206() {
+      return C[206] = dart.constList([C[207] || CT.C207], widget_inspector._Location);
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[206] || CT.C206,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 224,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C210() {
+      return C[210] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 229,
+        [_Location_file]: null
+      });
+    },
+    get C209() {
+      return C[209] = dart.constList([C[210] || CT.C210], widget_inspector._Location);
+    },
+    get C208() {
+      return C[208] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[209] || CT.C209,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 229,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C213() {
+      return C[213] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 229,
+        [_Location_file]: null
+      });
+    },
+    get C212() {
+      return C[212] = dart.constList([C[213] || CT.C213], widget_inspector._Location);
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[212] || CT.C212,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 228,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C216() {
+      return C[216] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 227,
+        [_Location_file]: null
+      });
+    },
+    get C215() {
+      return C[215] = dart.constList([C[216] || CT.C216], widget_inspector._Location);
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[215] || CT.C215,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 227,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C219() {
+      return C[219] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 233,
+        [_Location_file]: null
+      });
+    },
+    get C218() {
+      return C[218] = dart.constList([C[219] || CT.C219], widget_inspector._Location);
+    },
+    get C217() {
+      return C[217] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[218] || CT.C218,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 233,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C222() {
+      return C[222] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 232,
+        [_Location_file]: null
+      });
+    },
+    get C221() {
+      return C[221] = dart.constList([C[222] || CT.C222], widget_inspector._Location);
+    },
+    get C220() {
+      return C[220] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[221] || CT.C221,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 232,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C225() {
+      return C[225] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 240,
+        [_Location_file]: null
+      });
+    },
+    get C224() {
+      return C[224] = dart.constList([C[225] || CT.C225], widget_inspector._Location);
+    },
+    get C223() {
+      return C[223] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[224] || CT.C224,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 240,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C228() {
+      return C[228] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 238,
+        [_Location_file]: null
+      });
+    },
+    get C229() {
+      return C[229] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 240,
+        [_Location_file]: null
+      });
+    },
+    get C227() {
+      return C[227] = dart.constList([C[228] || CT.C228, C[229] || CT.C229], widget_inspector._Location);
+    },
+    get C226() {
+      return C[226] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[227] || CT.C227,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 237,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C232() {
+      return C[232] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 17,
+        [_Location_line]: 242,
+        [_Location_file]: null
+      });
+    },
+    get C231() {
+      return C[231] = dart.constList([C[232] || CT.C232], widget_inspector._Location);
+    },
+    get C230() {
+      return C[230] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[231] || CT.C231,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 241,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C235() {
+      return C[235] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 247,
+        [_Location_file]: null
+      });
+    },
+    get C234() {
+      return C[234] = dart.constList([C[235] || CT.C235], widget_inspector._Location);
+    },
+    get C233() {
+      return C[233] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[234] || CT.C234,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 247,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C238() {
+      return C[238] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 245,
+        [_Location_file]: null
+      });
+    },
+    get C239() {
+      return C[239] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 247,
+        [_Location_file]: null
+      });
+    },
+    get C237() {
+      return C[237] = dart.constList([C[238] || CT.C238, C[239] || CT.C239], widget_inspector._Location);
+    },
+    get C236() {
+      return C[236] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[237] || CT.C237,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 244,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C242() {
+      return C[242] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 236,
+        [_Location_file]: null
+      });
+    },
+    get C241() {
+      return C[241] = dart.constList([C[242] || CT.C242], widget_inspector._Location);
+    },
+    get C240() {
+      return C[240] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[241] || CT.C241,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 235,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C245() {
+      return C[245] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 209,
+        [_Location_file]: null
+      });
+    },
+    get C244() {
+      return C[244] = dart.constList([C[245] || CT.C245], widget_inspector._Location);
+    },
+    get C243() {
+      return C[243] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[244] || CT.C244,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 208,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C248() {
+      return C[248] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 207,
+        [_Location_file]: null
+      });
+    },
+    get C249() {
+      return C[249] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 208,
+        [_Location_file]: null
+      });
+    },
+    get C247() {
+      return C[247] = dart.constList([C[248] || CT.C248, C[249] || CT.C249], widget_inspector._Location);
+    },
+    get C246() {
+      return C[246] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[247] || CT.C247,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 206,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C252() {
+      return C[252] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 274,
+        [_Location_file]: null
+      });
+    },
+    get C253() {
+      return C[253] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 36,
+        [_Location_line]: 274,
+        [_Location_file]: null
+      });
+    },
+    get C251() {
+      return C[251] = dart.constList([C[252] || CT.C252, C[253] || CT.C253], widget_inspector._Location);
+    },
+    get C250() {
+      return C[250] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[251] || CT.C251,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 274,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C256() {
+      return C[256] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 273,
+        [_Location_file]: null
+      });
+    },
+    get C255() {
+      return C[255] = dart.constList([C[256] || CT.C256], widget_inspector._Location);
+    },
+    get C254() {
+      return C[254] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[255] || CT.C255,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 273,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C259() {
+      return C[259] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 279,
+        [_Location_file]: null
+      });
+    },
+    get C258() {
+      return C[258] = dart.constList([C[259] || CT.C259], widget_inspector._Location);
+    },
+    get C257() {
+      return C[257] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[258] || CT.C258,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 278,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C262() {
+      return C[262] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 278,
+        [_Location_file]: null
+      });
+    },
+    get C261() {
+      return C[261] = dart.constList([C[262] || CT.C262], widget_inspector._Location);
+    },
+    get C260() {
+      return C[260] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[261] || CT.C261,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 277,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C265() {
+      return C[265] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 276,
+        [_Location_file]: null
+      });
+    },
+    get C264() {
+      return C[264] = dart.constList([C[265] || CT.C265], widget_inspector._Location);
+    },
+    get C263() {
+      return C[263] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[264] || CT.C264,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 276,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C268() {
+      return C[268] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 51,
+        [_Location_line]: 283,
+        [_Location_file]: null
+      });
+    },
+    get C267() {
+      return C[267] = dart.constList([C[268] || CT.C268], widget_inspector._Location);
+    },
+    get C266() {
+      return C[266] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[267] || CT.C267,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 283,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C271() {
+      return C[271] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 283,
+        [_Location_file]: null
+      });
+    },
+    get C270() {
+      return C[270] = dart.constList([C[271] || CT.C271], widget_inspector._Location);
+    },
+    get C269() {
+      return C[269] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[270] || CT.C270,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 282,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C274() {
+      return C[274] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 281,
+        [_Location_file]: null
+      });
+    },
+    get C273() {
+      return C[273] = dart.constList([C[274] || CT.C274], widget_inspector._Location);
+    },
+    get C272() {
+      return C[272] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[273] || CT.C273,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 281,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C277() {
+      return C[277] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 287,
+        [_Location_file]: null
+      });
+    },
+    get C276() {
+      return C[276] = dart.constList([C[277] || CT.C277], widget_inspector._Location);
+    },
+    get C275() {
+      return C[275] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[276] || CT.C276,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 287,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C280() {
+      return C[280] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 286,
+        [_Location_file]: null
+      });
+    },
+    get C279() {
+      return C[279] = dart.constList([C[280] || CT.C280], widget_inspector._Location);
+    },
+    get C278() {
+      return C[278] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[279] || CT.C279,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 286,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C283() {
+      return C[283] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 291,
+        [_Location_file]: null
+      });
+    },
+    get C282() {
+      return C[282] = dart.constList([C[283] || CT.C283], widget_inspector._Location);
+    },
+    get C281() {
+      return C[281] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[282] || CT.C282,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 291,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C286() {
+      return C[286] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 15,
+        [_Location_line]: 291,
+        [_Location_file]: null
+      });
+    },
+    get C285() {
+      return C[285] = dart.constList([C[286] || CT.C286], widget_inspector._Location);
+    },
+    get C284() {
+      return C[284] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[285] || CT.C285,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 290,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C289() {
+      return C[289] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 289,
+        [_Location_file]: null
+      });
+    },
+    get C288() {
+      return C[288] = dart.constList([C[289] || CT.C289], widget_inspector._Location);
+    },
+    get C287() {
+      return C[287] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[288] || CT.C288,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 289,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C292() {
+      return C[292] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 295,
+        [_Location_file]: null
+      });
+    },
+    get C291() {
+      return C[291] = dart.constList([C[292] || CT.C292], widget_inspector._Location);
+    },
+    get C290() {
+      return C[290] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[291] || CT.C291,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 295,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C295() {
+      return C[295] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 294,
+        [_Location_file]: null
+      });
+    },
+    get C294() {
+      return C[294] = dart.constList([C[295] || CT.C295], widget_inspector._Location);
+    },
+    get C293() {
+      return C[293] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[294] || CT.C294,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 294,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C298() {
+      return C[298] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 302,
+        [_Location_file]: null
+      });
+    },
+    get C297() {
+      return C[297] = dart.constList([C[298] || CT.C298], widget_inspector._Location);
+    },
+    get C296() {
+      return C[296] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[297] || CT.C297,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 302,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C301() {
+      return C[301] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 300,
+        [_Location_file]: null
+      });
+    },
+    get C302() {
+      return C[302] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 302,
+        [_Location_file]: null
+      });
+    },
+    get C300() {
+      return C[300] = dart.constList([C[301] || CT.C301, C[302] || CT.C302], widget_inspector._Location);
+    },
+    get C299() {
+      return C[299] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[300] || CT.C300,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 299,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C305() {
+      return C[305] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 17,
+        [_Location_line]: 304,
+        [_Location_file]: null
+      });
+    },
+    get C304() {
+      return C[304] = dart.constList([C[305] || CT.C305], widget_inspector._Location);
+    },
+    get C303() {
+      return C[303] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[304] || CT.C304,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 303,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C308() {
+      return C[308] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 31,
+        [_Location_line]: 309,
+        [_Location_file]: null
+      });
+    },
+    get C307() {
+      return C[307] = dart.constList([C[308] || CT.C308], widget_inspector._Location);
+    },
+    get C306() {
+      return C[306] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[307] || CT.C307,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 309,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C311() {
+      return C[311] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 19,
+        [_Location_line]: 307,
+        [_Location_file]: null
+      });
+    },
+    get C312() {
+      return C[312] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 309,
+        [_Location_file]: null
+      });
+    },
+    get C310() {
+      return C[310] = dart.constList([C[311] || CT.C311, C[312] || CT.C312], widget_inspector._Location);
+    },
+    get C309() {
+      return C[309] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[310] || CT.C310,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 306,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C315() {
+      return C[315] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 298,
+        [_Location_file]: null
+      });
+    },
+    get C314() {
+      return C[314] = dart.constList([C[315] || CT.C315], widget_inspector._Location);
+    },
+    get C313() {
+      return C[313] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[314] || CT.C314,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 297,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C318() {
+      return C[318] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 271,
+        [_Location_file]: null
+      });
+    },
+    get C317() {
+      return C[317] = dart.constList([C[318] || CT.C318], widget_inspector._Location);
+    },
+    get C316() {
+      return C[316] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[317] || CT.C317,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 270,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C321() {
+      return C[321] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 7,
+        [_Location_line]: 269,
+        [_Location_file]: null
+      });
+    },
+    get C322() {
+      return C[322] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 270,
+        [_Location_file]: null
+      });
+    },
+    get C320() {
+      return C[320] = dart.constList([C[321] || CT.C321, C[322] || CT.C322], widget_inspector._Location);
+    },
+    get C319() {
+      return C[319] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[320] || CT.C320,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 268,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C324() {
+      return C[324] = dart.constList([], widget_inspector._Location);
+    },
+    get C323() {
+      return C[323] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[324] || CT.C324,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C327() {
+      return C[327] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C328() {
+      return C[328] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C329() {
+      return C[329] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C330() {
+      return C[330] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C326() {
+      return C[326] = dart.constList([C[327] || CT.C327, C[328] || CT.C328, C[329] || CT.C329, C[330] || CT.C330], widget_inspector._Location);
+    },
+    get C325() {
+      return C[325] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[326] || CT.C326,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C331() {
+      return C[331] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[324] || CT.C324,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C334() {
+      return C[334] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C335() {
+      return C[335] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C336() {
+      return C[336] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C337() {
+      return C[337] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C333() {
+      return C[333] = dart.constList([C[334] || CT.C334, C[335] || CT.C335, C[336] || CT.C336, C[337] || CT.C337], widget_inspector._Location);
+    },
+    get C332() {
+      return C[332] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[333] || CT.C333,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C338() {
+      return C[338] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[324] || CT.C324,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C341() {
+      return C[341] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C342() {
+      return C[342] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C343() {
+      return C[343] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C344() {
+      return C[344] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C340() {
+      return C[340] = dart.constList([C[341] || CT.C341, C[342] || CT.C342, C[343] || CT.C343, C[344] || CT.C344], widget_inspector._Location);
+    },
+    get C339() {
+      return C[339] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[340] || CT.C340,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C345() {
+      return C[345] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[324] || CT.C324,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 53,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C348() {
+      return C[348] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C349() {
+      return C[349] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C350() {
+      return C[350] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C351() {
+      return C[351] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 53,
+        [_Location_file]: null
+      });
+    },
+    get C347() {
+      return C[347] = dart.constList([C[348] || CT.C348, C[349] || CT.C349, C[350] || CT.C350, C[351] || CT.C351], widget_inspector._Location);
+    },
+    get C346() {
+      return C[346] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[347] || CT.C347,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    },
+    get C354() {
+      return C[354] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 5,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C355() {
+      return C[355] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scrollDirection",
+        [_Location_column]: 5,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C356() {
+      return C[356] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 5,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C353() {
+      return C[353] = dart.constList([C[354] || CT.C354, C[355] || CT.C355, C[356] || CT.C356], widget_inspector._Location);
+    },
+    get C352() {
+      return C[352] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[353] || CT.C353,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///D:/Nova%20pasta/projeto_TUPJA/lib/ListViewSepareted.dart"
+      });
+    }
+  }, false);
+  var C = Array(357).fill(void 0);
+  var I = ["package:tupja/ListViewSepareted.dart"];
+  ListViewSepareted.ListViewSepareted = class ListViewSepareted$ extends framework.StatefulWidget {
+    createState() {
+      return new ListViewSepareted._ListViewSeparetedState.new();
+    }
+  };
+  (ListViewSepareted.ListViewSepareted.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    ListViewSepareted.ListViewSepareted.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = ListViewSepareted.ListViewSepareted.prototype;
+  dart.addTypeTests(ListViewSepareted.ListViewSepareted);
+  dart.addTypeCaches(ListViewSepareted.ListViewSepareted);
+  dart.setMethodSignature(ListViewSepareted.ListViewSepareted, () => ({
+    __proto__: dart.getMethods(ListViewSepareted.ListViewSepareted.__proto__),
+    createState: dart.fnType(ListViewSepareted._ListViewSeparetedState, [])
+  }));
+  dart.setLibraryUri(ListViewSepareted.ListViewSepareted, I[0]);
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  ListViewSepareted._ListViewSeparetedState = class _ListViewSeparetedState extends framework.State$(ListViewSepareted.ListViewSepareted) {
+    build(context) {
+      return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new("Estoque", {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), body: new container.Container.new({height: 500.0, child: ListViewSepareted.carrousel(context), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10});
+    }
+  };
+  (ListViewSepareted._ListViewSeparetedState.new = function() {
+    ListViewSepareted._ListViewSeparetedState.__proto__.new.call(this);
+    ;
+  }).prototype = ListViewSepareted._ListViewSeparetedState.prototype;
+  dart.addTypeTests(ListViewSepareted._ListViewSeparetedState);
+  dart.addTypeCaches(ListViewSepareted._ListViewSeparetedState);
+  dart.setMethodSignature(ListViewSepareted._ListViewSeparetedState, () => ({
+    __proto__: dart.getMethods(ListViewSepareted._ListViewSeparetedState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(ListViewSepareted._ListViewSeparetedState, I[0]);
+  ListViewSepareted.Produto1 = class Produto1 extends framework.StatefulWidget {
+    createState() {
+      return new ListViewSepareted._State2.new();
+    }
+  };
+  (ListViewSepareted.Produto1.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    ListViewSepareted.Produto1.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = ListViewSepareted.Produto1.prototype;
+  dart.addTypeTests(ListViewSepareted.Produto1);
+  dart.addTypeCaches(ListViewSepareted.Produto1);
+  dart.setMethodSignature(ListViewSepareted.Produto1, () => ({
+    __proto__: dart.getMethods(ListViewSepareted.Produto1.__proto__),
+    createState: dart.fnType(ListViewSepareted._State2, [])
+  }));
+  dart.setLibraryUri(ListViewSepareted.Produto1, I[0]);
+  var _qtdProd1 = dart.privateName(ListViewSepareted, "_qtdProd1");
+  ListViewSepareted._State2 = class _State2 extends framework.State$(ListViewSepareted.Produto1) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new container.Container.new({width: 150.0, height: 150.0, child: new basic.Center.new({child: new basic.ClipRRect.new({child: new image.Image.asset("lib/imagem/Karen.jpg", {$creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), $creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), $creationLocationd_0dea112b090073317d4: C[23] || CT.C23})]), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Branca \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[31] || CT.C31})]), $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41})]), $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque: " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[47] || CT.C47}), $creationLocationd_0dea112b090073317d4: C[50] || CT.C50})]), $creationLocationd_0dea112b090073317d4: C[53] || CT.C53}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[56] || CT.C56})]), $creationLocationd_0dea112b090073317d4: C[59] || CT.C59}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[62] || CT.C62}), $creationLocationd_0dea112b090073317d4: C[65] || CT.C65})]), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[71] || CT.C71})]), $creationLocationd_0dea112b090073317d4: C[74] || CT.C74}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[77] || CT.C77}), $creationLocationd_0dea112b090073317d4: C[80] || CT.C80}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[84] || CT.C84}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[87] || CT.C87}), $creationLocationd_0dea112b090073317d4: C[90] || CT.C90})]), $creationLocationd_0dea112b090073317d4: C[94] || CT.C94})]), $creationLocationd_0dea112b090073317d4: C[97] || CT.C97}), $creationLocationd_0dea112b090073317d4: C[100] || CT.C100});
+    }
+  };
+  (ListViewSepareted._State2.new = function() {
+    this[_qtdProd1] = 0;
+    ListViewSepareted._State2.__proto__.new.call(this);
+    ;
+  }).prototype = ListViewSepareted._State2.prototype;
+  dart.addTypeTests(ListViewSepareted._State2);
+  dart.addTypeCaches(ListViewSepareted._State2);
+  dart.setMethodSignature(ListViewSepareted._State2, () => ({
+    __proto__: dart.getMethods(ListViewSepareted._State2.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(ListViewSepareted._State2, I[0]);
+  dart.setFieldSignature(ListViewSepareted._State2, () => ({
+    __proto__: dart.getFields(ListViewSepareted._State2.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  ListViewSepareted.Produto2 = class Produto2 extends framework.StatefulWidget {
+    createState() {
+      return new ListViewSepareted._State3.new();
+    }
+  };
+  (ListViewSepareted.Produto2.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    ListViewSepareted.Produto2.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = ListViewSepareted.Produto2.prototype;
+  dart.addTypeTests(ListViewSepareted.Produto2);
+  dart.addTypeCaches(ListViewSepareted.Produto2);
+  dart.setMethodSignature(ListViewSepareted.Produto2, () => ({
+    __proto__: dart.getMethods(ListViewSepareted.Produto2.__proto__),
+    createState: dart.fnType(ListViewSepareted._State3, [])
+  }));
+  dart.setLibraryUri(ListViewSepareted.Produto2, I[0]);
+  ListViewSepareted._State3 = class _State3 extends framework.State$(ListViewSepareted.Produto2) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Branca \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[104] || CT.C104})]), $creationLocationd_0dea112b090073317d4: C[108] || CT.C108}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[111] || CT.C111}), $creationLocationd_0dea112b090073317d4: C[114] || CT.C114})]), $creationLocationd_0dea112b090073317d4: C[117] || CT.C117}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque! " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[120] || CT.C120}), $creationLocationd_0dea112b090073317d4: C[123] || CT.C123})]), $creationLocationd_0dea112b090073317d4: C[126] || CT.C126}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[129] || CT.C129})]), $creationLocationd_0dea112b090073317d4: C[132] || CT.C132}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[135] || CT.C135}), $creationLocationd_0dea112b090073317d4: C[138] || CT.C138})]), $creationLocationd_0dea112b090073317d4: C[141] || CT.C141}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[144] || CT.C144})]), $creationLocationd_0dea112b090073317d4: C[147] || CT.C147}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[150] || CT.C150}), $creationLocationd_0dea112b090073317d4: C[153] || CT.C153}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[157] || CT.C157}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[160] || CT.C160}), $creationLocationd_0dea112b090073317d4: C[163] || CT.C163})]), $creationLocationd_0dea112b090073317d4: C[167] || CT.C167})]), $creationLocationd_0dea112b090073317d4: C[170] || CT.C170}), $creationLocationd_0dea112b090073317d4: C[173] || CT.C173});
+    }
+  };
+  (ListViewSepareted._State3.new = function() {
+    this[_qtdProd1] = 0;
+    ListViewSepareted._State3.__proto__.new.call(this);
+    ;
+  }).prototype = ListViewSepareted._State3.prototype;
+  dart.addTypeTests(ListViewSepareted._State3);
+  dart.addTypeCaches(ListViewSepareted._State3);
+  dart.setMethodSignature(ListViewSepareted._State3, () => ({
+    __proto__: dart.getMethods(ListViewSepareted._State3.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(ListViewSepareted._State3, I[0]);
+  dart.setFieldSignature(ListViewSepareted._State3, () => ({
+    __proto__: dart.getFields(ListViewSepareted._State3.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  ListViewSepareted.Produto3 = class Produto3 extends framework.StatefulWidget {
+    createState() {
+      return new ListViewSepareted._State4.new();
+    }
+  };
+  (ListViewSepareted.Produto3.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    ListViewSepareted.Produto3.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = ListViewSepareted.Produto3.prototype;
+  dart.addTypeTests(ListViewSepareted.Produto3);
+  dart.addTypeCaches(ListViewSepareted.Produto3);
+  dart.setMethodSignature(ListViewSepareted.Produto3, () => ({
+    __proto__: dart.getMethods(ListViewSepareted.Produto3.__proto__),
+    createState: dart.fnType(ListViewSepareted._State4, [])
+  }));
+  dart.setLibraryUri(ListViewSepareted.Produto3, I[0]);
+  ListViewSepareted._State4 = class _State4 extends framework.State$(ListViewSepareted.Produto3) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Branca \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[177] || CT.C177})]), $creationLocationd_0dea112b090073317d4: C[181] || CT.C181}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[184] || CT.C184}), $creationLocationd_0dea112b090073317d4: C[187] || CT.C187})]), $creationLocationd_0dea112b090073317d4: C[190] || CT.C190}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque! " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[193] || CT.C193}), $creationLocationd_0dea112b090073317d4: C[196] || CT.C196})]), $creationLocationd_0dea112b090073317d4: C[199] || CT.C199}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[202] || CT.C202})]), $creationLocationd_0dea112b090073317d4: C[205] || CT.C205}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[208] || CT.C208}), $creationLocationd_0dea112b090073317d4: C[211] || CT.C211})]), $creationLocationd_0dea112b090073317d4: C[214] || CT.C214}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[217] || CT.C217})]), $creationLocationd_0dea112b090073317d4: C[220] || CT.C220}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[223] || CT.C223}), $creationLocationd_0dea112b090073317d4: C[226] || CT.C226}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[230] || CT.C230}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[233] || CT.C233}), $creationLocationd_0dea112b090073317d4: C[236] || CT.C236})]), $creationLocationd_0dea112b090073317d4: C[240] || CT.C240})]), $creationLocationd_0dea112b090073317d4: C[243] || CT.C243}), $creationLocationd_0dea112b090073317d4: C[246] || CT.C246});
+    }
+  };
+  (ListViewSepareted._State4.new = function() {
+    this[_qtdProd1] = 0;
+    ListViewSepareted._State4.__proto__.new.call(this);
+    ;
+  }).prototype = ListViewSepareted._State4.prototype;
+  dart.addTypeTests(ListViewSepareted._State4);
+  dart.addTypeCaches(ListViewSepareted._State4);
+  dart.setMethodSignature(ListViewSepareted._State4, () => ({
+    __proto__: dart.getMethods(ListViewSepareted._State4.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(ListViewSepareted._State4, I[0]);
+  dart.setFieldSignature(ListViewSepareted._State4, () => ({
+    __proto__: dart.getFields(ListViewSepareted._State4.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  ListViewSepareted.Produto4 = class Produto4 extends framework.StatefulWidget {
+    createState() {
+      return new ListViewSepareted._State5.new();
+    }
+  };
+  (ListViewSepareted.Produto4.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    ListViewSepareted.Produto4.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = ListViewSepareted.Produto4.prototype;
+  dart.addTypeTests(ListViewSepareted.Produto4);
+  dart.addTypeCaches(ListViewSepareted.Produto4);
+  dart.setMethodSignature(ListViewSepareted.Produto4, () => ({
+    __proto__: dart.getMethods(ListViewSepareted.Produto4.__proto__),
+    createState: dart.fnType(ListViewSepareted._State5, [])
+  }));
+  dart.setLibraryUri(ListViewSepareted.Produto4, I[0]);
+  ListViewSepareted._State5 = class _State5 extends framework.State$(ListViewSepareted.Produto4) {
+    build(context) {
+      return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Branca \n", {style: theme.Theme.of(context).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[250] || CT.C250})]), $creationLocationd_0dea112b090073317d4: C[254] || CT.C254}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[257] || CT.C257}), $creationLocationd_0dea112b090073317d4: C[260] || CT.C260})]), $creationLocationd_0dea112b090073317d4: C[263] || CT.C263}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque! " + dart.str(this[_qtdProd1]), {$creationLocationd_0dea112b090073317d4: C[266] || CT.C266}), $creationLocationd_0dea112b090073317d4: C[269] || CT.C269})]), $creationLocationd_0dea112b090073317d4: C[272] || CT.C272}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[275] || CT.C275})]), $creationLocationd_0dea112b090073317d4: C[278] || CT.C278}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[281] || CT.C281}), $creationLocationd_0dea112b090073317d4: C[284] || CT.C284})]), $creationLocationd_0dea112b090073317d4: C[287] || CT.C287}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[290] || CT.C290})]), $creationLocationd_0dea112b090073317d4: C[293] || CT.C293}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 + 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Adicionar", {$creationLocationd_0dea112b090073317d4: C[296] || CT.C296}), $creationLocationd_0dea112b090073317d4: C[299] || CT.C299}), new basic.SizedBox.new({width: 20.0, $creationLocationd_0dea112b090073317d4: C[303] || CT.C303}), new text_button.TextButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+                    let t0;
+                    t0 = this[_qtdProd1];
+                    this[_qtdProd1] = t0 - 1;
+                    return t0;
+                  }, T.VoidTovoid())), T.VoidTovoid()), child: new text.Text.new("Remover", {$creationLocationd_0dea112b090073317d4: C[306] || CT.C306}), $creationLocationd_0dea112b090073317d4: C[309] || CT.C309})]), $creationLocationd_0dea112b090073317d4: C[313] || CT.C313})]), $creationLocationd_0dea112b090073317d4: C[316] || CT.C316}), $creationLocationd_0dea112b090073317d4: C[319] || CT.C319});
+    }
+  };
+  (ListViewSepareted._State5.new = function() {
+    this[_qtdProd1] = 0;
+    ListViewSepareted._State5.__proto__.new.call(this);
+    ;
+  }).prototype = ListViewSepareted._State5.prototype;
+  dart.addTypeTests(ListViewSepareted._State5);
+  dart.addTypeCaches(ListViewSepareted._State5);
+  dart.setMethodSignature(ListViewSepareted._State5, () => ({
+    __proto__: dart.getMethods(ListViewSepareted._State5.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(ListViewSepareted._State5, I[0]);
+  dart.setFieldSignature(ListViewSepareted._State5, () => ({
+    __proto__: dart.getFields(ListViewSepareted._State5.__proto__),
+    [_qtdProd1]: dart.fieldType(core.int)
+  }));
+  ListViewSepareted.carrousel = function carrousel(context) {
+    return new scroll_view.ListView.new({padding: new edge_insets.EdgeInsets.all(10.0), scrollDirection: basic_types.Axis.horizontal, children: T.JSArrayOfWidget().of([new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.red._get(50), child: new ListViewSepareted.Produto1.new({$creationLocationd_0dea112b090073317d4: C[323] || CT.C323}), $creationLocationd_0dea112b090073317d4: C[325] || CT.C325}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.green._get(50), child: new ListViewSepareted.Produto2.new({$creationLocationd_0dea112b090073317d4: C[331] || CT.C331}), $creationLocationd_0dea112b090073317d4: C[332] || CT.C332}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.yellow._get(50), child: new ListViewSepareted.Produto3.new({$creationLocationd_0dea112b090073317d4: C[338] || CT.C338}), $creationLocationd_0dea112b090073317d4: C[339] || CT.C339}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.orange._get(50), child: new ListViewSepareted.Produto4.new({$creationLocationd_0dea112b090073317d4: C[345] || CT.C345}), $creationLocationd_0dea112b090073317d4: C[346] || CT.C346})]), $creationLocationd_0dea112b090073317d4: C[352] || CT.C352});
+  };
+  dart.trackLibraries("packages/tupja/ListViewSepareted.dart", {
+    "package:tupja/ListViewSepareted.dart": ListViewSepareted
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["ListViewSepareted.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAO2C;IAAyB;;;;;;EACpE;;;;;;;;;;;;;;UAM4B;AACxB,YAAO,oCACG,+BAAc,kBAAK,oIACrB,qCACI,cACD,4BAAU,OAAO;IAG9B;;;;;EACF;;;;;;;;;;AAuC2B;IAAS;;;;;;EACpC;;;;;;;;;;UAM4B;AACxB,YAAO,sCACc,+BAAI,cAChB,gCACK,wBACR,6BAAc,wBACZ,oCACS,eACC,cACD,6BACE,gCACQ,sBAAM,kUAK3B,6BAAc,wBACZ,kBAAK,0BAA+B,AAAY,AAAU,eAAnB,OAAO,+IAGhD,6BAAc,wBACZ,+BACW,kBACH,sQAEV,6BAAc,wBACZ,0BACS,kBAAK,AAAwB,0BAAV,sMAG9B,6BAAc,wBACZ,kBAAK,6HAEP,6BAAc,wBACZ,0BACS,kBAAK,oMAGhB,6BAAc,wBACZ,kBAAK,6HAEP,6BACY,wBACR,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK,oIAChB,+BACS,iEAET,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK;IAM5B;;;IA7DI,kBAAY;;;EA8DlB;;;;;;;;;;;;;;AAM2B;IAAS;;;;;;EACpC;;;;;;;;;UAM4B;AACxB,YAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBACZ,kBAAK,0BAA+B,AAAY,AAAU,eAAnB,OAAO,mJAEhD,6BAAc,wBACZ,+BACW,kBACH,4QAEV,6BAAc,wBACZ,0BACS,kBAAK,AAAwB,0BAAV,4MAG9B,6BAAc,wBACZ,kBAAK,iIAEP,6BAAc,wBACZ,0BACS,kBAAK,0MAGhB,6BAAc,wBACZ,kBAAK,iIAEP,6BACY,wBACR,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK,wIAChB,+BACS,mEAET,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK;IAM5B;;;IAlDI,kBAAY;;;EAmDlB;;;;;;;;;;;;;;AAM2B;IAAS;;;;;;EACpC;;;;;;;;;UAM4B;AACxB,YAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBACZ,kBAAK,0BAA+B,AAAY,AAAU,eAAnB,OAAO,mJAEhD,6BAAc,wBACZ,+BACW,kBACH,4QAEV,6BAAc,wBACZ,0BACS,kBAAK,AAAwB,0BAAV,4MAG9B,6BAAc,wBACZ,kBAAK,iIAEP,6BAAc,wBACZ,0BACS,kBAAK,0MAGhB,6BAAc,wBACZ,kBAAK,iIAEP,6BACY,wBACR,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK,wIAChB,+BACS,mEAET,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK;IAM5B;;;IAlDI,kBAAY;;;EAmDlB;;;;;;;;;;;;;;AAM2B;IAAS;;;;;;EACpC;;;;;;;;;UAM4B;AACxB,YAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBACZ,kBAAK,0BAA+B,AAAY,AAAU,eAAnB,OAAO,mJAEhD,6BAAc,wBACZ,+BACW,kBACH,4QAEV,6BAAc,wBACZ,0BACS,kBAAK,AAAwB,0BAAV,4MAG9B,6BAAc,wBACZ,kBAAK,iIAEP,6BAAc,wBACZ,0BACS,kBAAK,0MAGhB,6BAAc,wBACZ,kBAAK,iIAEP,6BACY,wBACR,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK,wIAChB,+BACS,mEAET,2CACe,cAAM,cAAS;;AAAM;2CAAS;;+DAElC,kBAAK;IAM5B;;;IAlDI,kBAAY;;;EAmDlB;;;;;;;;;;;;mDAlSiB;AACf,UAAO,wCACe,+BAAI,wBACF,uCACZ,wBACR,sCACsB,+BAAI,aACjB,cACO,AAAG,uBAAC,YACX,8JAET,sCACsB,+BAAI,aACjB,cACO,AAAK,yBAAC,YACb,8JAET,sCACsB,+BAAI,aACjB,cACO,AAAM,0BAAC,YACd,8JAET,sCACsB,+BAAI,aACjB,cACO,AAAM,0BAAC,YACd;EAIf","file":"../../../packages/tupja/ListViewSepareted.dart.lib.js"}');
+  // Exports:
+  return {
+    ListViewSepareted: ListViewSepareted
+  };
+}));
+
+//# sourceMappingURL=ListViewSepareted.dart.lib.js.map
