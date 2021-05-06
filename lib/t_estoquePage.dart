@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:badges/badges.dart';
+
 
 class Estoque extends StatefulWidget {
   @override
@@ -7,8 +7,6 @@ class Estoque extends StatefulWidget {
 }
 
 class _State extends State<Estoque> {
-  int _count = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

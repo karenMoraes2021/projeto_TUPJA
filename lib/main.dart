@@ -3,7 +3,6 @@
 //
 
 import 'package:flutter/material.dart';
-import 'package:tupja/t_configPages.dart';
 import 'loginPage.dart';
 import 't_menuPage.dart';
 import 't_sobrePage.dart';
@@ -11,7 +10,7 @@ import 't_cadastroMedPage.dart';
 import 't_estoquePage.dart';
 import 't_recadosPage.dart';
 import 't_configPages.dart';
-import 'RedefinirSenha.dart';
+import 't_redefinirSenha.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -31,8 +30,6 @@ void main() {
     theme: ThemeData(
         primaryColor: Colors.blueGrey,
         brightness: Brightness.light,
-        //backgroundColor: Colors.orange,
-        //accentColor: Colors.cyan,
         fontFamily: 'Georgia',
         textTheme: TextTheme(
           headline4: TextStyle(fontWeight: FontWeight.bold),

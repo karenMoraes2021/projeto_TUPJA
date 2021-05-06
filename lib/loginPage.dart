@@ -12,7 +12,6 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  static const nomeRota = '/login';
   VerificaLogin login1 = new VerificaLogin();
    bool esqueceSenha = true ; 
 
